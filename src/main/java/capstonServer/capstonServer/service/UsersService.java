@@ -2,6 +2,7 @@ package capstonServer.capstonServer.service;
 
 import capstonServer.capstonServer.dto.request.UserRequestDto;
 import capstonServer.capstonServer.dto.response.UserResponseDto;
+import capstonServer.capstonServer.entity.AuthProvider;
 import capstonServer.capstonServer.entity.User;
 import capstonServer.capstonServer.enums.Authority;
 import capstonServer.capstonServer.http.Response;
@@ -49,11 +50,12 @@ public class UsersService {
                 .email(signUp.getEmail())
                 .password(passwordEncoder.encode(signUp.getPassword()))
                 .name(signUp.getName())
+                .provider(AuthProvider.local)
                 .roles(Collections.singletonList(Authority.ROLE_USER.name()))
                 .build();
         usersRepository.save(user);
 
-        return response.success("회원가입에 성공했습니다.");
+        return response.success(user,"회원가입에 성공하셨습니다.",HttpStatus.CREATED);
     }
 
     public ResponseEntity<?> login(UserRequestDto.Login login) {
@@ -124,6 +126,7 @@ public class UsersService {
                 .email(userInfo.get("email").toString())
                 .password(null)
                 .name(userInfo.get("nickname").toString())
+                .provider(AuthProvider.kakao)
                 .roles(Collections.singletonList(Authority.ROLE_USER.name()))
                 .build();
         usersRepository.save(user);

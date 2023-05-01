@@ -4,6 +4,7 @@ package capstonServer.capstonServer.controller;
 import capstonServer.capstonServer.dto.request.UserRequestDto;
 import capstonServer.capstonServer.http.Response;
 import capstonServer.capstonServer.http.ResponseMsg;
+import capstonServer.capstonServer.service.EmailService;
 import capstonServer.capstonServer.service.KaKaoService;
 import capstonServer.capstonServer.service.UsersService;
 import lombok.RequiredArgsConstructor;
@@ -23,10 +24,10 @@ public class UsersController {
 
     private final UsersService usersService;
     private final Response response;
-
+    private final EmailService emailService;
     private final KaKaoService kaKaoService;
 
-    @PostMapping("/sign-up")
+    @PostMapping("/signUp")
     public ResponseEntity<?> signUp(@Validated @RequestBody UserRequestDto.SignUp signUp, Errors errors) {
         // validation check
         if (errors.hasErrors()) {
@@ -51,6 +52,20 @@ public class UsersController {
         }
         return usersService.login(login);
     }
+
+
+
+
+    @PostMapping("/emailConfirm")
+    public String emailConfirm(@RequestParam String email) throws Exception {
+
+        String confirm = emailService.sendSimpleMessage(email);
+
+        return confirm;
+    }
+
+
+
 
     @PostMapping("/reissue")
     public ResponseEntity<?> reissue(@Validated UserRequestDto.Reissue reissue, Errors errors) {

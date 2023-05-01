@@ -31,6 +31,8 @@ public class User extends BaseTime implements UserDetails {
 
     @Column
     private String password;
+    @Enumerated(value = EnumType.STRING)
+    private AuthProvider provider;
 
     @Column
     @ElementCollection(fetch = FetchType.EAGER)

@@ -1,5 +1,6 @@
 package capstonServer.capstonServer.service;
 
+import capstonServer.capstonServer.auth.AuthPropoerties;
 import capstonServer.capstonServer.entity.OAuthToken;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -23,9 +24,10 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-// https://kauth.kakao.com/oauth/authorize?client_id=179011b75542e1a21fa2207d50a4df57&redirect_uri=http://localhost:8080/auth/kakao/callback&response_type=code
 @Service
 public class KaKaoService {
+    @Value("${app.kakao.clientId}")
+    private String client_id;
 
     public String getAccessToken(String code) throws IOException {
 
@@ -36,7 +38,7 @@ public class KaKaoService {
 
         MultiValueMap<String, String> params = new LinkedMultiValueMap<>();
         params.add("grant_type", "authorization_code");
-        params.add("client_id", "179011b75542e1a21fa2207d50a4df57");
+        params.add("client_id", client_id);
         params.add("redirect_uri", "http://localhost:8080/auth/kakao/callback");
         params.add("code", code);
 
