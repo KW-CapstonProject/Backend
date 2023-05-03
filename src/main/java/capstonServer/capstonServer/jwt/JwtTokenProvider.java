@@ -1,6 +1,8 @@
 package capstonServer.capstonServer.jwt;
 
 import capstonServer.capstonServer.dto.response.UserResponseDto;
+import capstonServer.capstonServer.security.CustomUserPrincipal;
+import capstonServer.capstonServer.security.SecurityUtil;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
@@ -18,6 +20,7 @@ import java.security.Key;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Date;
+import java.util.List;
 import java.util.stream.Collectors;
 
 @Slf4j
@@ -38,6 +41,7 @@ public class JwtTokenProvider {
 
     // 유저 정보를 가지고 AccessToken, RefreshToken 을 생성하는 메서드
     public UserResponseDto.TokenInfo generateToken(Authentication authentication) {
+        CustomUserPrincipal userPrincipal = (CustomUserPrincipal) authentication.getPrincipal();
         // 권한 가져오기
         String authorities = authentication.getAuthorities().stream()
                 .map(GrantedAuthority::getAuthority)
@@ -45,10 +49,12 @@ public class JwtTokenProvider {
 
         long now = (new Date()).getTime();
         // Access Token 생성
+
         Date accessTokenExpiresIn = new Date(now + ACCESS_TOKEN_EXPIRE_TIME);
+
         String accessToken = Jwts.builder()
-                .setSubject(authentication.getName())
                 .claim(AUTHORITIES_KEY, authorities)
+                .setSubject(userPrincipal.getEmail())
                 .setExpiration(accessTokenExpiresIn)
                 .signWith(key, SignatureAlgorithm.HS256)
                 .compact();
@@ -67,10 +73,12 @@ public class JwtTokenProvider {
                 .build();
     }
 
-    // JWT 토큰을 복호화하여 토큰에 들어있는 정보를 꺼내는 메서드
     public Authentication getAuthentication(String accessToken) {
         // 토큰 복호화
         Claims claims = parseClaims(accessToken);
+        System.out.println("claims:"+claims);
+        System.out.println("claims:"+claims.getSubject());
+
 
         if (claims.get(AUTHORITIES_KEY) == null) {
             throw new RuntimeException("권한 정보가 없는 토큰입니다.");
@@ -84,6 +92,7 @@ public class JwtTokenProvider {
 
         // UserDetails 객체를 만들어서 Authentication 리턴
         UserDetails principal = new User(claims.getSubject(), "", authorities);
+        System.out.println("principal:"+principal);
         return new UsernamePasswordAuthenticationToken(principal, "", authorities);
     }
 
@@ -119,4 +128,14 @@ public class JwtTokenProvider {
         Long now = new Date().getTime();
         return (expiration.getTime() - now);
     }
+
+
+    public String getUserIdFromToken(String accessToken) {
+        Claims claims = Jwts.parser()
+                .setSigningKey(key)
+                .parseClaimsJws(accessToken)
+                .getBody();
+        return claims.getSubject();
+    }
+
 }

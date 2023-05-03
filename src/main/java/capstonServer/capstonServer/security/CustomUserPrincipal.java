@@ -5,16 +5,14 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class CustomUserPrincipal implements UserDetails {
     private String email;
     private String password;
     private String username;
     private Collection<? extends GrantedAuthority> authorities;
+
     private Map<String, Object> attributes;
     private User user;
 
@@ -22,14 +20,15 @@ public class CustomUserPrincipal implements UserDetails {
         return user;
     }
 
-    public CustomUserPrincipal(String email, String password, Collection<? extends GrantedAuthority> authorities, User user) {
+    public CustomUserPrincipal(String email, String password, Collection<? extends GrantedAuthority> authorities, User user, String name) {
         this.email = email;
         this.password = password;
         this.authorities = authorities;
         this.user = user;
+        this.username=name;
     }
 
-    public static CustomUserPrincipal create(User user) {
+    public static CustomUserPrincipal create(User user, String name) {
         List<GrantedAuthority> authorities = Collections.
                 singletonList(new SimpleGrantedAuthority("ROLE_USER"));
 
@@ -37,16 +36,24 @@ public class CustomUserPrincipal implements UserDetails {
                 user.getEmail(),
                 user.getPassword(),
                 authorities,
-                user
+                user,
+                name
         );
     }
 
-    public static CustomUserPrincipal create(User user, Map<String, Object> attributes) {
-        CustomUserPrincipal userPrincipal = CustomUserPrincipal.create(user);
-        userPrincipal.setAttributes(attributes);
-        return userPrincipal;
+//    public static CustomUserPrincipal create(User user, Map<String, Object> attributes) {
+//        CustomUserPrincipal userPrincipal = CustomUserPrincipal.create(user);
+//        userPrincipal.setAttributes(attributes);
+//        return userPrincipal;
+//    }
+
+    public String getEmail() {
+        return email;
     }
 
+    public void setAttributes(Map<String, Object> attributes) {
+        this.attributes = attributes;
+    }
 
     @Override
     public String getPassword() {
@@ -77,18 +84,11 @@ public class CustomUserPrincipal implements UserDetails {
         return true;
     }
 
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return authorities;
     }
 
-//    @Override
-//    public Map<String, Object> getAttributes() {
-//        return attributes;
-//    }
-
-    public void setAttributes(Map<String, Object> attributes) {
-        this.attributes = attributes;
-    }
 
 }

@@ -55,7 +55,7 @@ public class UsersService {
                 .build();
         usersRepository.save(user);
 
-        return response.success(user,"회원가입에 성공하셨습니다.",HttpStatus.CREATED);
+        return response.success(user, "회원가입에 성공하셨습니다.", HttpStatus.CREATED);
     }
 
     public ResponseEntity<?> login(UserRequestDto.Login login) {
@@ -66,22 +66,24 @@ public class UsersService {
         }
 
 
-        if(!passwordEncoder.matches(login.getPassword(), user.getPassword())){
+        if (!passwordEncoder.matches(login.getPassword(), user.getPassword())) {
             return response.fail("비밀번호가 일치하지 않습니다.", HttpStatus.BAD_REQUEST);
         }
-
 
 
         // 1. Login ID/PW 를 기반으로 Authentication 객체 생성
         // 이때 authentication 는 인증 여부를 확인하는 authenticated 값이 false
         UsernamePasswordAuthenticationToken authenticationToken = login.toAuthentication();
+        System.out.println("authenticationToken : "+authenticationToken);
 
         // 2. 실제 검증 (사용자 비밀번호 체크)이 이루어지는 부분
         // authenticate 매서드가 실행될 때 CustomUserDetailsService 에서 만든 loadUserByUsername 메서드가 실행
         Authentication authentication = authenticationManagerBuilder.getObject().authenticate(authenticationToken);
-
+        System.out.println("authentication : "+authentication);
         // 3. 인증 정보를 기반으로 JWT 토큰 생성
         UserResponseDto.TokenInfo tokenInfo = jwtTokenProvider.generateToken(authentication);
+        System.out.println("tokenInfo : "+authentication);
+        System.out.println("tokenInfo : "+authentication.getName());
 
         // 4. RefreshToken Redis 저장 (expirationTime 설정을 통해 자동 삭제 처리)
         redisTemplate.opsForValue()
@@ -100,12 +102,12 @@ public class UsersService {
         Authentication authentication = jwtTokenProvider.getAuthentication(reissue.getAccessToken());
 
         // 3. Redis 에서 User email 을 기반으로 저장된 Refresh Token 값을 가져옵니다.
-        String refreshToken = (String)redisTemplate.opsForValue().get("RT:" + authentication.getName());
+        String refreshToken = (String) redisTemplate.opsForValue().get("RT:" + authentication.getName());
         // (추가) 로그아웃되어 Redis 에 RefreshToken 이 존재하지 않는 경우 처리
-        if(ObjectUtils.isEmpty(refreshToken)) {
+        if (ObjectUtils.isEmpty(refreshToken)) {
             return response.fail("잘못된 요청입니다.", HttpStatus.BAD_REQUEST);
         }
-        if(!refreshToken.equals(reissue.getRefreshToken())) {
+        if (!refreshToken.equals(reissue.getRefreshToken())) {
             return response.fail("Refresh Token 정보가 일치하지 않습니다.", HttpStatus.BAD_REQUEST);
         }
 
@@ -131,7 +133,7 @@ public class UsersService {
                 .build();
         usersRepository.save(user);
 
-        return response.success("회원가입에 성공했습니다.", String.valueOf(user),HttpStatus.CREATED);
+        return response.success("회원가입에 성공했습니다.", String.valueOf(user), HttpStatus.CREATED);
 
     }
 
@@ -145,13 +147,13 @@ public class UsersService {
         // 2. Access Token 에서 User email 을 가져옵니다.
         Authentication authentication = jwtTokenProvider.getAuthentication(logout.getAccessToken());
 
-        // 3. Redis 에서 해당 User email 로 저장된 Refresh Token 이 있는지 여부를 확인 후 있을 경우 삭제합니다.
+        // 3. Redis 에서 해당 User email 로 저장된 Refresh Token 이 있는지 여부를 확인 후 있을 경우 삭제
         if (redisTemplate.opsForValue().get("RT:" + authentication.getName()) != null) {
             // Refresh Token 삭제
             redisTemplate.delete("RT:" + authentication.getName());
         }
 
-        // 4. 해당 Access Token 유효시간 가지고 와서 BlackList 로 저장하기
+        // 4. 해당 Access Token 유효시간 가지고 와서 BlackList 로 저장
         Long expiration = jwtTokenProvider.getExpiration(logout.getAccessToken());
         redisTemplate.opsForValue()
                 .set(logout.getAccessToken(), "logout", expiration, TimeUnit.MILLISECONDS);
@@ -171,5 +173,33 @@ public class UsersService {
         usersRepository.save(user);
 
         return response.success();
+    }
+
+    public String tempPassword(String confirm, String email) {
+        System.out.print("시작");
+        User user = usersRepository.findByEmail(email)
+                .orElseThrow(() -> new UsernameNotFoundException("No authentication information."));
+        user.setPassword(confirm);
+        usersRepository.save(user);
+        System.out.print("비밀번호"+ user.getPassword());
+        return user.getPassword();
+    }
+
+    public ResponseEntity<?> updatePassword(UserRequestDto.passwordConfirm password) {
+//        User user = usersRepository.findByEmail(email)
+//                .orElseThrow(() -> new IllegalStateException("이메일 찾지 못함"));
+        User user = usersRepository.findByEmail(password.getEmail()).orElseThrow(() -> new NoSuchElementException("유저가 없습니다"));
+        String TruePassword=user.getPassword();
+        boolean check=passwordEncoder.matches(password.getCheckpassword(),TruePassword);
+        if(check){
+            user.setPassword(password.getChangepassword());
+            usersRepository.save(user);
+            return response.success();
+        }
+        else{
+            return response.fail("현재 비밀번호가 올바르지 않습니다.", HttpStatus.BAD_REQUEST);
+
+        }
+
     }
 }

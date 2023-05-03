@@ -54,8 +54,6 @@ public class UsersController {
     }
 
 
-
-
     @PostMapping("/emailConfirm")
     public String emailConfirm(@RequestParam String email) throws Exception {
 
@@ -64,8 +62,20 @@ public class UsersController {
         return confirm;
     }
 
+    @PostMapping("/passConfirm")
+    public String passConfirm(@RequestParam String email) throws Exception {
+        String confirm = emailService.passwordMessage(email);
+        System.out.println(confirm);
 
+        String chkpass= usersService.tempPassword(confirm,email);
+        return chkpass;
+    }
 
+    @PostMapping("/updatePassword")
+    public ResponseEntity<?> updatePassword(@RequestBody UserRequestDto.passwordConfirm password) throws Exception {
+        return usersService.updatePassword(password);
+
+    }
 
     @PostMapping("/reissue")
     public ResponseEntity<?> reissue(@Validated UserRequestDto.Reissue reissue, Errors errors) {
