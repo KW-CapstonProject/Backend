@@ -1,0 +1,1662 @@
+2023-05-04 02:30:48.109  INFO 53850 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-04 02:30:48.116  INFO 53850 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-04 02:30:48.116  INFO 53850 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-05-04 02:30:48.185  INFO 53850 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-04 02:30:48.186  INFO 53850 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 959 ms
+2023-05-04 02:30:48.516  INFO 53850 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-05-04 02:30:48.626  WARN 53850 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2023-05-04 02:30:48.629  INFO 53850 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-04 02:30:48.661  INFO 53850 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-05-04 02:30:48.683 ERROR 53850 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-05-04 02:31:00.363  INFO 53897 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-04 02:31:00.369  INFO 53897 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-04 02:31:00.369  INFO 53897 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-05-04 02:31:00.421  INFO 53897 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-04 02:31:00.422  INFO 53897 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 563 ms
+2023-05-04 02:31:00.568  INFO 53897 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-05-04 02:31:00.645  WARN 53897 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2023-05-04 02:31:00.648  INFO 53897 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-04 02:31:00.655  INFO 53897 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-05-04 02:31:00.663 ERROR 53897 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-05-04 02:33:29.683  INFO 54477 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-04 02:33:29.689  INFO 54477 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-04 02:33:29.689  INFO 54477 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-05-04 02:33:29.748  INFO 54477 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-04 02:33:29.748  INFO 54477 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 717 ms
+2023-05-04 02:33:29.905  INFO 54477 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-05-04 02:33:29.990  WARN 54477 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2023-05-04 02:33:29.992  INFO 54477 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-04 02:33:30.000  INFO 54477 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-05-04 02:33:30.011 ERROR 54477 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-05-04 02:36:14.236  INFO 55136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-05-04 02:36:14.242  INFO 55136 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-04 02:36:14.242  INFO 55136 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-05-04 02:36:14.289  INFO 55136 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-04 02:36:14.289  INFO 55136 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 478 ms
+2023-05-04 02:36:14.431  INFO 55136 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-05-04 02:36:14.508  INFO 55136 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-05-04 02:37:43.780  INFO 55136 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-04 02:37:43.781  INFO 55136 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-04 02:37:43.783  INFO 55136 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-04 02:37:43.810 TRACE 55136 --- [http-nio-8081-exec-1] org.zalando.logbook.Logbook              : Incoming Request: efcc2b9bbeb6ef20
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:8081/ HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 0
+host: localhost:8081
+postman-token: 00a7550b-ea6f-487b-b1e8-f1666994802e
+user-agent: PostmanRuntime/7.32.2
+2023-05-04 02:37:43.821  WARN 55136 --- [http-nio-8081-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-05-04 02:37:43.823 TRACE 55136 --- [http-nio-8081-exec-1] org.zalando.logbook.Logbook              : Outgoing Response: efcc2b9bbeb6ef20
+Duration: 32 ms
+HTTP/1.1 405 Method Not Allowed
+Allow: GET, HEAD
+2023-05-04 02:37:46.326 TRACE 55136 --- [http-nio-8081-exec-2] org.zalando.logbook.Logbook              : Incoming Request: f12c75fd27eb5219
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:8081/ HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 0
+host: localhost:8081
+postman-token: 6f07938e-7bd1-4013-8b98-036af7c22985
+user-agent: PostmanRuntime/7.32.2
+2023-05-04 02:37:46.327  WARN 55136 --- [http-nio-8081-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-05-04 02:37:46.327 TRACE 55136 --- [http-nio-8081-exec-2] org.zalando.logbook.Logbook              : Outgoing Response: f12c75fd27eb5219
+Duration: 1 ms
+HTTP/1.1 405 Method Not Allowed
+Allow: GET, HEAD
+2023-05-04 02:37:48.235 TRACE 55136 --- [http-nio-8081-exec-4] org.zalando.logbook.Logbook              : Incoming Request: a1135c31870873d3
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:8081/ HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 0
+host: localhost:8081
+postman-token: 77a226b4-cf03-41cc-bf4f-0dc31ecf5942
+user-agent: PostmanRuntime/7.32.2
+2023-05-04 02:37:48.236  WARN 55136 --- [http-nio-8081-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-05-04 02:37:48.237 TRACE 55136 --- [http-nio-8081-exec-4] org.zalando.logbook.Logbook              : Outgoing Response: a1135c31870873d3
+Duration: 2 ms
+HTTP/1.1 405 Method Not Allowed
+Allow: GET, HEAD
+2023-05-04 02:46:31.737 TRACE 55136 --- [http-nio-8081-exec-7] org.zalando.logbook.Logbook              : Incoming Request: b26c346f6bd6b506
+Remote: 127.0.0.1
+GET http://127.0.0.1:8081/send?message=how%20are%20you HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: 127.0.0.1:8081
+postman-token: 8614cc6d-f66d-4765-99c5-2b17e8a5045a
+user-agent: PostmanRuntime/7.32.2
+2023-05-04 02:46:31.766  INFO 55136 --- [http-nio-8081-exec-7] i.g.f.c.s.impl.DefaultChatgptService     : request url: https://api.openai.com/v1/completions, httpEntity: <ChatRequest(model=text-davinci-003, prompt=how are you, maxTokens=500, temperature=1.0, topP=1.0, suffix=null, n=null, stream=null, logprobs=null, echo=null, stop=null, presencePenalty=null, frequencyPenalty=null, bestOf=null, logitBias=null, user=null),[Content-Type:"application/json;charset=UTF-8", Authorization:"Bearer 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"]>
+2023-05-04 02:46:32.308 TRACE 55136 --- [http-nio-8081-exec-7] org.zalando.logbook.Logbook              : Outgoing Response: b26c346f6bd6b506
+Duration: 568 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 03 May 2023 17:46:32 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":500,"message":"error","data":"429 Too Many Requests: \"{<EOL>    \"error\": {<EOL>        \"message\": \"You exceeded your current quota, please check your plan and billing details.\",<EOL>        \"type\": \"insufficient_quota\",<EOL>        \"param\": null,<EOL>        \"code\": null<EOL>    }<EOL>}<EOL>\""}
+2023-05-04 02:49:12.544 TRACE 55136 --- [http-nio-8081-exec-8] org.zalando.logbook.Logbook              : Incoming Request: 858cdf425e148fb8
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8081/index.html HTTP/1.1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+accept-encoding: gzip, deflate, br
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+connection: keep-alive
+host: localhost:8081
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: none
+sec-fetch-user: ?1
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+2023-05-04 02:49:12.560 TRACE 55136 --- [http-nio-8081-exec-8] org.zalando.logbook.Logbook              : Outgoing Response: 858cdf425e148fb8
+Duration: 17 ms
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Connection: keep-alive
+Content-Length: 1830
+Content-Type: text/html;charset=UTF-8
+Date: Wed, 03 May 2023 17:49:12 GMT
+Keep-Alive: timeout=60
+Last-Modified: Wed, 03 May 2023 17:30:42 GMT
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link rel="shortcut icon" href="ChatGPT.jpeg" />
+    <style type="text/css">
+        #message-list {
+            width: 100%;
+            height: 500px;
+            overflow-y: scroll;
+        }
+
+        .message-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .user-message {
+            white-space: pre-line;
+            background-color: #eee;
+            border-radius: 5px;
+            padding: 10px;
+            margin-right: 20px;
+        }
+
+        .bot-message {
+            white-space: pre-line;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div>Input your message here and press "Enter" to send (don't send it again before getting the previous response)</div>
+<input type="text" id="message-input" width="100%">
+<div id="message-list"></div>
+<script>
+    const messageList = document.getElementById('message-list');
+
+    document.getElementById('message-input').addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            const message = event.target.value;
+            messageList.innerHTML += `<div class="message-item"><div class="user-message">${message}</div></div>`;
+            event.target.value = '';
+            fetch('http://127.0.0.1:8080/send?message=' + message, {
+                method: 'GET'
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    messageList.innerHTML += `<div class="message-item"><div class="bot-message">${data.data}</div></div>`;
+                });
+        }
+    });
+</script>
+</body>
+</html>
+2023-05-04 02:49:12.649 TRACE 55136 --- [http-nio-8081-exec-9] org.zalando.logbook.Logbook              : Incoming Request: c10f99ad010a31b5
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8081/ChatGPT.jpeg HTTP/1.1
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+accept-encoding: gzip, deflate, br
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+connection: keep-alive
+host: localhost:8081
+referer: http://localhost:8081/index.html
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+sec-fetch-dest: image
+sec-fetch-mode: no-cors
+sec-fetch-site: same-origin
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+2023-05-04 02:49:12.653 TRACE 55136 --- [http-nio-8081-exec-9] org.zalando.logbook.Logbook              : Outgoing Response: c10f99ad010a31b5
+Duration: 4 ms
+HTTP/1.1 404 Not Found
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+2023-05-04 02:51:07.942  INFO 57762 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-05-04 02:51:07.948  INFO 57762 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-04 02:51:07.949  INFO 57762 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-05-04 02:51:08.007  INFO 57762 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-04 02:51:08.007  INFO 57762 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 617 ms
+2023-05-04 02:51:08.152  INFO 57762 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-05-04 02:51:08.352  INFO 57762 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-05-04 02:51:10.870  INFO 57762 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-04 02:51:10.870  INFO 57762 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-04 02:51:10.873  INFO 57762 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-05-04 02:51:10.895 TRACE 57762 --- [http-nio-8081-exec-2] org.zalando.logbook.Logbook              : Incoming Request: c5849c14ad426f73
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8081/index.html HTTP/1.1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+accept-encoding: gzip, deflate, br
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+cache-control: max-age=0
+connection: keep-alive
+host: localhost:8081
+if-modified-since: Wed, 03 May 2023 17:30:42 GMT
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: none
+sec-fetch-user: ?1
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+2023-05-04 02:51:10.912 TRACE 57762 --- [http-nio-8081-exec-2] org.zalando.logbook.Logbook              : Outgoing Response: c5849c14ad426f73
+Duration: 32 ms
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Connection: keep-alive
+Content-Length: 1801
+Content-Type: text/html;charset=UTF-8
+Date: Wed, 03 May 2023 17:51:10 GMT
+Keep-Alive: timeout=60
+Last-Modified: Wed, 03 May 2023 17:51:05 GMT
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link rel="shortcut icon" href="ChatGPT.jpeg" />
+    <style type="text/css">
+        #message-list {
+            width: 100%;
+            height: 500px;
+            overflow-y: scroll;
+        }
+
+        .message-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .user-message {
+            white-space: pre-line;
+            background-color: #eee;
+            border-radius: 5px;
+            padding: 10px;
+            margin-right: 20px;
+        }
+
+        .bot-message {
+            white-space: pre-line;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div>메세지 입력후 Enter(이전 응답을 받기 전에 다시 전송 안함)(</div>
+<input type="text" id="message-input" width="100%">
+<div id="message-list"></div>
+<script>
+    const messageList = document.getElementById('message-list');
+
+    document.getElementById('message-input').addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            const message = event.target.value;
+            messageList.innerHTML += `<div class="message-item"><div class="user-message">${message}</div></div>`;
+            event.target.value = '';
+            fetch('http://127.0.0.1:8080/send?message=' + message, {
+                method: 'GET'
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    messageList.innerHTML += `<div class="message-item"><div class="bot-message">${data.data}</div></div>`;
+                });
+        }
+    });
+</script>
+</body>
+</html>
+2023-05-04 02:51:21.895  INFO 57807 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-05-04 02:51:21.900  INFO 57807 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-04 02:51:21.900  INFO 57807 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-05-04 02:51:21.944  INFO 57807 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-04 02:51:21.944  INFO 57807 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 492 ms
+2023-05-04 02:51:22.083  INFO 57807 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-05-04 02:51:22.168  INFO 57807 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-05-04 02:51:25.498  INFO 57807 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-04 02:51:25.499  INFO 57807 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-04 02:51:25.501  INFO 57807 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-04 02:51:25.523 TRACE 57807 --- [http-nio-8081-exec-1] org.zalando.logbook.Logbook              : Incoming Request: cacb672453d78a07
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8081/index.html HTTP/1.1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+accept-encoding: gzip, deflate, br
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+cache-control: max-age=0
+connection: keep-alive
+host: localhost:8081
+if-modified-since: Wed, 03 May 2023 17:51:05 GMT
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: none
+sec-fetch-user: ?1
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+2023-05-04 02:51:25.544 TRACE 57807 --- [http-nio-8081-exec-1] org.zalando.logbook.Logbook              : Outgoing Response: cacb672453d78a07
+Duration: 36 ms
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Connection: keep-alive
+Content-Length: 1800
+Content-Type: text/html;charset=UTF-8
+Date: Wed, 03 May 2023 17:51:25 GMT
+Keep-Alive: timeout=60
+Last-Modified: Wed, 03 May 2023 17:51:20 GMT
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link rel="shortcut icon" href="ChatGPT.jpeg" />
+    <style type="text/css">
+        #message-list {
+            width: 100%;
+            height: 500px;
+            overflow-y: scroll;
+        }
+
+        .message-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .user-message {
+            white-space: pre-line;
+            background-color: #eee;
+            border-radius: 5px;
+            padding: 10px;
+            margin-right: 20px;
+        }
+
+        .bot-message {
+            white-space: pre-line;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div>메세지 입력후 Enter(이전 응답을 받기 전에 다시 전송 안함)</div>
+<input type="text" id="message-input" width="100%">
+<div id="message-list"></div>
+<script>
+    const messageList = document.getElementById('message-list');
+
+    document.getElementById('message-input').addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            const message = event.target.value;
+            messageList.innerHTML += `<div class="message-item"><div class="user-message">${message}</div></div>`;
+            event.target.value = '';
+            fetch('http://127.0.0.1:8080/send?message=' + message, {
+                method: 'GET'
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    messageList.innerHTML += `<div class="message-item"><div class="bot-message">${data.data}</div></div>`;
+                });
+        }
+    });
+</script>
+</body>
+</html>
+2023-05-04 02:52:03.557  INFO 57935 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-04 02:52:03.563  INFO 57935 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-04 02:52:03.564  INFO 57935 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-05-04 02:52:03.612  INFO 57935 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-04 02:52:03.612  INFO 57935 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 580 ms
+2023-05-04 02:52:03.775  INFO 57935 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-05-04 02:52:03.842  WARN 57935 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2023-05-04 02:52:03.844  INFO 57935 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-05-04 02:52:03.852  INFO 57935 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-05-04 02:52:03.861 ERROR 57935 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-05-04 02:53:42.683  INFO 58248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-04 02:53:42.688  INFO 58248 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-04 02:53:42.689  INFO 58248 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-05-04 02:53:42.733  INFO 58248 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-04 02:53:42.733  INFO 58248 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 561 ms
+2023-05-04 02:53:42.871  INFO 58248 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-05-04 02:53:42.953  INFO 58248 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-04 02:53:53.212  INFO 58248 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-04 02:53:53.213  INFO 58248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-04 02:53:53.215  INFO 58248 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-04 02:53:53.239 TRACE 58248 --- [http-nio-8080-exec-1] org.zalando.logbook.Logbook              : Incoming Request: b8ee6f53ce6afac9
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8080/index.html HTTP/1.1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+accept-encoding: gzip, deflate, br
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+connection: keep-alive
+host: localhost:8080
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: none
+sec-fetch-user: ?1
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+2023-05-04 02:53:53.259 TRACE 58248 --- [http-nio-8080-exec-1] org.zalando.logbook.Logbook              : Outgoing Response: b8ee6f53ce6afac9
+Duration: 37 ms
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Connection: keep-alive
+Content-Length: 1800
+Content-Type: text/html;charset=UTF-8
+Date: Wed, 03 May 2023 17:53:53 GMT
+Keep-Alive: timeout=60
+Last-Modified: Wed, 03 May 2023 17:51:20 GMT
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link rel="shortcut icon" href="ChatGPT.jpeg" />
+    <style type="text/css">
+        #message-list {
+            width: 100%;
+            height: 500px;
+            overflow-y: scroll;
+        }
+
+        .message-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .user-message {
+            white-space: pre-line;
+            background-color: #eee;
+            border-radius: 5px;
+            padding: 10px;
+            margin-right: 20px;
+        }
+
+        .bot-message {
+            white-space: pre-line;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div>메세지 입력후 Enter(이전 응답을 받기 전에 다시 전송 안함)</div>
+<input type="text" id="message-input" width="100%">
+<div id="message-list"></div>
+<script>
+    const messageList = document.getElementById('message-list');
+
+    document.getElementById('message-input').addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            const message = event.target.value;
+            messageList.innerHTML += `<div class="message-item"><div class="user-message">${message}</div></div>`;
+            event.target.value = '';
+            fetch('http://127.0.0.1:8080/send?message=' + message, {
+                method: 'GET'
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    messageList.innerHTML += `<div class="message-item"><div class="bot-message">${data.data}</div></div>`;
+                });
+        }
+    });
+</script>
+</body>
+</html>
+2023-05-04 02:53:53.297 TRACE 58248 --- [http-nio-8080-exec-2] org.zalando.logbook.Logbook              : Incoming Request: e99f4b08ef3c4a2c
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8080/ChatGPT.jpeg HTTP/1.1
+accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+accept-encoding: gzip, deflate, br
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+connection: keep-alive
+host: localhost:8080
+referer: http://localhost:8080/index.html
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+sec-fetch-dest: image
+sec-fetch-mode: no-cors
+sec-fetch-site: same-origin
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+2023-05-04 02:53:53.299 TRACE 58248 --- [http-nio-8080-exec-2] org.zalando.logbook.Logbook              : Outgoing Response: e99f4b08ef3c4a2c
+Duration: 1 ms
+HTTP/1.1 404 Not Found
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+2023-05-04 02:53:59.263 TRACE 58248 --- [http-nio-8080-exec-3] org.zalando.logbook.Logbook              : Incoming Request: c5049cc3f57b58fe
+Remote: 127.0.0.1
+GET http://127.0.0.1:8080/send?message=%EC%95%88%EB%85%95 HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+connection: keep-alive
+host: 127.0.0.1:8080
+origin: http://localhost:8080
+referer: http://localhost:8080/
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+2023-05-04 02:53:59.285  INFO 58248 --- [http-nio-8080-exec-3] i.g.f.c.s.impl.DefaultChatgptService     : request url: https://api.openai.com/v1/completions, httpEntity: <ChatRequest(model=text-davinci-003, prompt=안녕, maxTokens=500, temperature=1.0, topP=1.0, suffix=null, n=null, stream=null, logprobs=null, echo=null, stop=null, presencePenalty=null, frequencyPenalty=null, bestOf=null, logitBias=null, user=null),[Content-Type:"application/json;charset=UTF-8", Authorization:"Bearer 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"]>
+2023-05-04 02:53:59.681 TRACE 58248 --- [http-nio-8080-exec-3] org.zalando.logbook.Logbook              : Outgoing Response: c5049cc3f57b58fe
+Duration: 415 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 03 May 2023 17:53:59 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":500,"message":"error","data":"429 Too Many Requests: \"{<EOL>    \"error\": {<EOL>        \"message\": \"You exceeded your current quota, please check your plan and billing details.\",<EOL>        \"type\": \"insufficient_quota\",<EOL>        \"param\": null,<EOL>        \"code\": null<EOL>    }<EOL>}<EOL>\""}
+2023-05-04 03:24:29.828  INFO 63800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-04 03:24:29.834  INFO 63800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-04 03:24:29.834  INFO 63800 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-05-04 03:24:29.895  INFO 63800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-04 03:24:29.895  INFO 63800 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 663 ms
+2023-05-04 03:24:30.075  INFO 63800 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-05-04 03:24:30.168  INFO 63800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-04 03:24:45.135  INFO 63800 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-04 03:24:45.136  INFO 63800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-04 03:24:45.138  INFO 63800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-04 03:24:45.160 TRACE 63800 --- [http-nio-8080-exec-1] org.zalando.logbook.Logbook              : Incoming Request: e7407d132668a1ef
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:8080/index.html HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 0
+host: localhost:8080
+postman-token: 964c63d5-2672-4c49-9965-85b77e288c67
+user-agent: PostmanRuntime/7.32.2
+2023-05-04 03:24:45.175  WARN 63800 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-05-04 03:24:45.178 TRACE 63800 --- [http-nio-8080-exec-1] org.zalando.logbook.Logbook              : Outgoing Response: e7407d132668a1ef
+Duration: 33 ms
+HTTP/1.1 405 Method Not Allowed
+Allow: GET, HEAD
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+2023-05-04 03:24:54.849 TRACE 63800 --- [http-nio-8080-exec-3] org.zalando.logbook.Logbook              : Incoming Request: aec70a8a1b9f707b
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8080/index.html HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:8080
+postman-token: 704de484-f22c-4501-b75b-82e2d3d40a1a
+user-agent: PostmanRuntime/7.32.2
+2023-05-04 03:24:54.865 TRACE 63800 --- [http-nio-8080-exec-3] org.zalando.logbook.Logbook              : Outgoing Response: aec70a8a1b9f707b
+Duration: 18 ms
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Connection: keep-alive
+Content-Length: 1800
+Content-Type: text/html;charset=UTF-8
+Date: Wed, 03 May 2023 18:24:54 GMT
+Keep-Alive: timeout=60
+Last-Modified: Wed, 03 May 2023 17:51:20 GMT
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link rel="shortcut icon" href="ChatGPT.jpeg" />
+    <style type="text/css">
+        #message-list {
+            width: 100%;
+            height: 500px;
+            overflow-y: scroll;
+        }
+
+        .message-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .user-message {
+            white-space: pre-line;
+            background-color: #eee;
+            border-radius: 5px;
+            padding: 10px;
+            margin-right: 20px;
+        }
+
+        .bot-message {
+            white-space: pre-line;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div>메세지 입력후 Enter(이전 응답을 받기 전에 다시 전송 안함)</div>
+<input type="text" id="message-input" width="100%">
+<div id="message-list"></div>
+<script>
+    const messageList = document.getElementById('message-list');
+
+    document.getElementById('message-input').addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            const message = event.target.value;
+            messageList.innerHTML += `<div class="message-item"><div class="user-message">${message}</div></div>`;
+            event.target.value = '';
+            fetch('http://127.0.0.1:8080/send?message=' + message, {
+                method: 'GET'
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    messageList.innerHTML += `<div class="message-item"><div class="bot-message">${data.data}</div></div>`;
+                });
+        }
+    });
+</script>
+</body>
+</html>
+2023-05-04 03:25:35.592 TRACE 63800 --- [http-nio-8080-exec-4] org.zalando.logbook.Logbook              : Incoming Request: 9126d497b53ba4f0
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8080/index.html HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:8080
+postman-token: 00d6e361-c520-4081-8278-5c1a9ba9d1de
+user-agent: PostmanRuntime/7.32.2
+2023-05-04 03:25:35.602 TRACE 63800 --- [http-nio-8080-exec-4] org.zalando.logbook.Logbook              : Outgoing Response: 9126d497b53ba4f0
+Duration: 10 ms
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Connection: keep-alive
+Content-Length: 1800
+Content-Type: text/html;charset=UTF-8
+Date: Wed, 03 May 2023 18:25:35 GMT
+Keep-Alive: timeout=60
+Last-Modified: Wed, 03 May 2023 17:51:20 GMT
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link rel="shortcut icon" href="ChatGPT.jpeg" />
+    <style type="text/css">
+        #message-list {
+            width: 100%;
+            height: 500px;
+            overflow-y: scroll;
+        }
+
+        .message-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .user-message {
+            white-space: pre-line;
+            background-color: #eee;
+            border-radius: 5px;
+            padding: 10px;
+            margin-right: 20px;
+        }
+
+        .bot-message {
+            white-space: pre-line;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div>메세지 입력후 Enter(이전 응답을 받기 전에 다시 전송 안함)</div>
+<input type="text" id="message-input" width="100%">
+<div id="message-list"></div>
+<script>
+    const messageList = document.getElementById('message-list');
+
+    document.getElementById('message-input').addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            const message = event.target.value;
+            messageList.innerHTML += `<div class="message-item"><div class="user-message">${message}</div></div>`;
+            event.target.value = '';
+            fetch('http://127.0.0.1:8080/send?message=' + message, {
+                method: 'GET'
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    messageList.innerHTML += `<div class="message-item"><div class="bot-message">${data.data}</div></div>`;
+                });
+        }
+    });
+</script>
+</body>
+</html>
+2023-05-04 03:26:17.428 TRACE 63800 --- [http-nio-8080-exec-5] org.zalando.logbook.Logbook              : Incoming Request: ee63d89a1b0e94fa
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8080/index.html HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:8080
+postman-token: e29e809f-58a4-425d-a279-bd763fad1e54
+user-agent: PostmanRuntime/7.32.2
+2023-05-04 03:26:17.436 TRACE 63800 --- [http-nio-8080-exec-5] org.zalando.logbook.Logbook              : Outgoing Response: ee63d89a1b0e94fa
+Duration: 8 ms
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Connection: keep-alive
+Content-Length: 1800
+Content-Type: text/html;charset=UTF-8
+Date: Wed, 03 May 2023 18:26:17 GMT
+Keep-Alive: timeout=60
+Last-Modified: Wed, 03 May 2023 17:51:20 GMT
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link rel="shortcut icon" href="ChatGPT.jpeg" />
+    <style type="text/css">
+        #message-list {
+            width: 100%;
+            height: 500px;
+            overflow-y: scroll;
+        }
+
+        .message-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .user-message {
+            white-space: pre-line;
+            background-color: #eee;
+            border-radius: 5px;
+            padding: 10px;
+            margin-right: 20px;
+        }
+
+        .bot-message {
+            white-space: pre-line;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div>메세지 입력후 Enter(이전 응답을 받기 전에 다시 전송 안함)</div>
+<input type="text" id="message-input" width="100%">
+<div id="message-list"></div>
+<script>
+    const messageList = document.getElementById('message-list');
+
+    document.getElementById('message-input').addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            const message = event.target.value;
+            messageList.innerHTML += `<div class="message-item"><div class="user-message">${message}</div></div>`;
+            event.target.value = '';
+            fetch('http://127.0.0.1:8080/send?message=' + message, {
+                method: 'GET'
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    messageList.innerHTML += `<div class="message-item"><div class="bot-message">${data.data}</div></div>`;
+                });
+        }
+    });
+</script>
+</body>
+</html>
+2023-05-04 03:26:35.699 TRACE 63800 --- [http-nio-8080-exec-6] org.zalando.logbook.Logbook              : Incoming Request: f27ba1cc8f6a76e3
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8080/index.html HTTP/1.1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+accept-encoding: gzip, deflate, br
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+cache-control: max-age=0
+connection: keep-alive
+host: localhost:8080
+if-modified-since: Wed, 03 May 2023 17:51:20 GMT
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: none
+sec-fetch-user: ?1
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+2023-05-04 03:26:35.708 TRACE 63800 --- [http-nio-8080-exec-6] org.zalando.logbook.Logbook              : Outgoing Response: f27ba1cc8f6a76e3
+Duration: 10 ms
+HTTP/1.1 304 Not Modified
+Connection: keep-alive
+Date: Wed, 03 May 2023 18:26:35 GMT
+Keep-Alive: timeout=60
+Last-Modified: Wed, 03 May 2023 17:51:20 GMT
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+2023-05-04 03:26:43.951 TRACE 63800 --- [http-nio-8080-exec-7] org.zalando.logbook.Logbook              : Incoming Request: a3f9366c19cdaf35
+Remote: 127.0.0.1
+GET http://127.0.0.1:8080/send?message=hi HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+connection: keep-alive
+host: 127.0.0.1:8080
+origin: http://localhost:8080
+referer: http://localhost:8080/
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+2023-05-04 03:26:43.972  INFO 63800 --- [http-nio-8080-exec-7] i.g.f.c.s.impl.DefaultChatgptService     : request url: https://api.openai.com/v1/completions, httpEntity: <ChatRequest(model=text-davinci-003, prompt=hi, maxTokens=500, temperature=1.0, topP=1.0, suffix=null, n=null, stream=null, logprobs=null, echo=null, stop=null, presencePenalty=null, frequencyPenalty=null, bestOf=null, logitBias=null, user=null),[Content-Type:"application/json;charset=UTF-8", Authorization:"Bearer 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"]>
+2023-05-04 03:26:44.415 TRACE 63800 --- [http-nio-8080-exec-7] org.zalando.logbook.Logbook              : Outgoing Response: a3f9366c19cdaf35
+Duration: 462 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 03 May 2023 18:26:44 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":500,"message":"error","data":"429 Too Many Requests: \"{<EOL>    \"error\": {<EOL>        \"message\": \"You exceeded your current quota, please check your plan and billing details.\",<EOL>        \"type\": \"insufficient_quota\",<EOL>        \"param\": null,<EOL>        \"code\": null<EOL>    }<EOL>}<EOL>\""}
+2023-05-04 03:46:25.370 TRACE 63800 --- [http-nio-8080-exec-3] org.zalando.logbook.Logbook              : Incoming Request: 834f1c4352b3ef54
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8080/index.html HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:8080
+postman-token: 3bbe27cd-381d-473e-92a6-2eaaa8395403
+user-agent: PostmanRuntime/7.32.2
+2023-05-04 03:46:25.456 TRACE 63800 --- [http-nio-8080-exec-3] org.zalando.logbook.Logbook              : Outgoing Response: 834f1c4352b3ef54
+Duration: 88 ms
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Connection: keep-alive
+Content-Length: 1800
+Content-Type: text/html;charset=UTF-8
+Date: Wed, 03 May 2023 18:46:25 GMT
+Keep-Alive: timeout=60
+Last-Modified: Wed, 03 May 2023 17:51:20 GMT
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link rel="shortcut icon" href="ChatGPT.jpeg" />
+    <style type="text/css">
+        #message-list {
+            width: 100%;
+            height: 500px;
+            overflow-y: scroll;
+        }
+
+        .message-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .user-message {
+            white-space: pre-line;
+            background-color: #eee;
+            border-radius: 5px;
+            padding: 10px;
+            margin-right: 20px;
+        }
+
+        .bot-message {
+            white-space: pre-line;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div>메세지 입력후 Enter(이전 응답을 받기 전에 다시 전송 안함)</div>
+<input type="text" id="message-input" width="100%">
+<div id="message-list"></div>
+<script>
+    const messageList = document.getElementById('message-list');
+
+    document.getElementById('message-input').addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            const message = event.target.value;
+            messageList.innerHTML += `<div class="message-item"><div class="user-message">${message}</div></div>`;
+            event.target.value = '';
+            fetch('http://127.0.0.1:8080/send?message=' + message, {
+                method: 'GET'
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    messageList.innerHTML += `<div class="message-item"><div class="bot-message">${data.data}</div></div>`;
+                });
+        }
+    });
+</script>
+</body>
+</html>
+2023-05-04 03:46:45.949 TRACE 63800 --- [http-nio-8080-exec-4] org.zalando.logbook.Logbook              : Incoming Request: c6c565e325fff810
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8080/ HTTP/1.1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+accept-encoding: gzip, deflate, br
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+connection: keep-alive
+host: localhost:8080
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: none
+sec-fetch-user: ?1
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+2023-05-04 03:46:45.976 TRACE 63800 --- [http-nio-8080-exec-4] org.zalando.logbook.Logbook              : Outgoing Response: c6c565e325fff810
+Duration: 31 ms
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Connection: keep-alive
+Content-Language: ko-KR
+Content-Length: 1800
+Content-Type: text/html;charset=UTF-8
+Date: Wed, 03 May 2023 18:46:45 GMT
+Keep-Alive: timeout=60
+Last-Modified: Wed, 03 May 2023 17:51:20 GMT
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link rel="shortcut icon" href="ChatGPT.jpeg" />
+    <style type="text/css">
+        #message-list {
+            width: 100%;
+            height: 500px;
+            overflow-y: scroll;
+        }
+
+        .message-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .user-message {
+            white-space: pre-line;
+            background-color: #eee;
+            border-radius: 5px;
+            padding: 10px;
+            margin-right: 20px;
+        }
+
+        .bot-message {
+            white-space: pre-line;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div>메세지 입력후 Enter(이전 응답을 받기 전에 다시 전송 안함)</div>
+<input type="text" id="message-input" width="100%">
+<div id="message-list"></div>
+<script>
+    const messageList = document.getElementById('message-list');
+
+    document.getElementById('message-input').addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            const message = event.target.value;
+            messageList.innerHTML += `<div class="message-item"><div class="user-message">${message}</div></div>`;
+            event.target.value = '';
+            fetch('http://127.0.0.1:8080/send?message=' + message, {
+                method: 'GET'
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    messageList.innerHTML += `<div class="message-item"><div class="bot-message">${data.data}</div></div>`;
+                });
+        }
+    });
+</script>
+</body>
+</html>
+2023-05-04 03:46:53.042 TRACE 63800 --- [http-nio-8080-exec-5] org.zalando.logbook.Logbook              : Incoming Request: dc8e9ebbabd281fd
+Remote: 127.0.0.1
+GET http://127.0.0.1:8080/send?message=hi HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+connection: keep-alive
+host: 127.0.0.1:8080
+origin: http://localhost:8080
+referer: http://localhost:8080/
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+2023-05-04 03:46:53.046  INFO 63800 --- [http-nio-8080-exec-5] i.g.f.c.s.impl.DefaultChatgptService     : request url: https://api.openai.com/v1/completions, httpEntity: <ChatRequest(model=text-davinci-003, prompt=hi, maxTokens=500, temperature=1.0, topP=1.0, suffix=null, n=null, stream=null, logprobs=null, echo=null, stop=null, presencePenalty=null, frequencyPenalty=null, bestOf=null, logitBias=null, user=null),[Content-Type:"application/json;charset=UTF-8", Authorization:"Bearer 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"]>
+2023-05-04 03:46:53.272 TRACE 63800 --- [http-nio-8080-exec-5] org.zalando.logbook.Logbook              : Outgoing Response: dc8e9ebbabd281fd
+Duration: 230 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 03 May 2023 18:46:53 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":500,"message":"error","data":"429 Too Many Requests: \"{<EOL>    \"error\": {<EOL>        \"message\": \"You exceeded your current quota, please check your plan and billing details.\",<EOL>        \"type\": \"insufficient_quota\",<EOL>        \"param\": null,<EOL>        \"code\": null<EOL>    }<EOL>}<EOL>\""}
+2023-05-04 03:52:02.040  INFO 68748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-04 03:52:02.047  INFO 68748 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-04 03:52:02.048  INFO 68748 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-05-04 03:52:02.133  INFO 68748 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-04 03:52:02.133  INFO 68748 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 919 ms
+2023-05-04 03:52:02.354  INFO 68748 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-05-04 03:52:02.456  INFO 68748 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-04 03:52:07.497  INFO 68748 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-04 03:52:07.498  INFO 68748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-04 03:52:07.502  INFO 68748 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-05-04 03:52:07.540 TRACE 68748 --- [http-nio-8080-exec-1] org.zalando.logbook.Logbook              : Incoming Request: ff9d2e2b9b41d41c
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8080/ HTTP/1.1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+accept-encoding: gzip, deflate, br
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+cache-control: max-age=0
+connection: keep-alive
+host: localhost:8080
+if-modified-since: Wed, 03 May 2023 17:51:20 GMT
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: none
+sec-fetch-user: ?1
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+2023-05-04 03:52:07.558 TRACE 68748 --- [http-nio-8080-exec-1] org.zalando.logbook.Logbook              : Outgoing Response: ff9d2e2b9b41d41c
+Duration: 48 ms
+HTTP/1.1 304 Not Modified
+Connection: keep-alive
+Date: Wed, 03 May 2023 18:52:07 GMT
+Keep-Alive: timeout=60
+Last-Modified: Wed, 03 May 2023 17:51:20 GMT
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+2023-05-04 03:52:11.471 TRACE 68748 --- [http-nio-8080-exec-2] org.zalando.logbook.Logbook              : Incoming Request: eb8eec3f77cbd7c3
+Remote: 127.0.0.1
+GET http://127.0.0.1:8080/send?message=hi HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+connection: keep-alive
+host: 127.0.0.1:8080
+origin: http://localhost:8080
+referer: http://localhost:8080/
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+2023-05-04 03:52:11.498  INFO 68748 --- [http-nio-8080-exec-2] i.g.f.c.s.impl.DefaultChatgptService     : request url: https://api.openai.com/v1/completions, httpEntity: <ChatRequest(model=text-davinci-003, prompt=hi, maxTokens=500, temperature=1.0, topP=1.0, suffix=null, n=null, stream=null, logprobs=null, echo=null, stop=null, presencePenalty=null, frequencyPenalty=null, bestOf=null, logitBias=null, user=null),[Content-Type:"application/json;charset=UTF-8", Authorization:"Bearer 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"]>
+2023-05-04 03:52:11.902 TRACE 68748 --- [http-nio-8080-exec-2] org.zalando.logbook.Logbook              : Outgoing Response: eb8eec3f77cbd7c3
+Duration: 429 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Wed, 03 May 2023 18:52:11 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":500,"message":"error","data":"429 Too Many Requests: \"{<EOL>    \"error\": {<EOL>        \"message\": \"You exceeded your current quota, please check your plan and billing details.\",<EOL>        \"type\": \"insufficient_quota\",<EOL>        \"param\": null,<EOL>        \"code\": null<EOL>    }<EOL>}<EOL>\""}
+2023-05-04 13:32:23.780  INFO 95850 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-04 13:32:23.785  INFO 95850 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-04 13:32:23.785  INFO 95850 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-05-04 13:32:23.828  INFO 95850 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-04 13:32:23.828  INFO 95850 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 400 ms
+2023-05-04 13:32:23.949  INFO 95850 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-05-04 13:32:24.018  INFO 95850 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-04 13:33:19.473  INFO 95850 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-04 13:33:19.475  INFO 95850 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-04 13:33:19.483  INFO 95850 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2023-05-04 13:33:19.507 TRACE 95850 --- [http-nio-8080-exec-1] org.zalando.logbook.Logbook              : Incoming Request: f746eb6056558965
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8080/ HTTP/1.1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+accept-encoding: gzip, deflate, br
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+connection: keep-alive
+host: localhost:8080
+if-modified-since: Wed, 03 May 2023 17:51:20 GMT
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: none
+sec-fetch-user: ?1
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+2023-05-04 13:33:19.528 TRACE 95850 --- [http-nio-8080-exec-1] org.zalando.logbook.Logbook              : Outgoing Response: f746eb6056558965
+Duration: 38 ms
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Connection: keep-alive
+Content-Language: ko-KR
+Content-Length: 1748
+Content-Type: text/html;charset=UTF-8
+Date: Thu, 04 May 2023 04:33:19 GMT
+Keep-Alive: timeout=60
+Last-Modified: Wed, 03 May 2023 19:04:00 GMT
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link rel="shortcut icon" href="ChatGPT.jpeg" />
+    <style type="text/css">
+        #message-list {
+            width: 100%;
+            height: 500px;
+            overflow-y: scroll;
+        }
+
+        .message-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .user-message {
+            white-space: pre-line;
+            background-color: #eee;
+            border-radius: 5px;
+            padding: 10px;
+            margin-right: 20px;
+        }
+
+        .bot-message {
+            white-space: pre-line;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div>메세지 입력후 Enter </div>
+<input type="text" id="message-input" width="100%">
+<div id="message-list"></div>
+<script>
+    const messageList = document.getElementById('message-list');
+
+    document.getElementById('message-input').addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            const message = event.target.value;
+            messageList.innerHTML += `<div class="message-item"><div class="user-message">${message}</div></div>`;
+            event.target.value = '';
+            fetch('http://127.0.0.1:8080/send?message=' + message, {
+                method: 'GET'
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    messageList.innerHTML += `<div class="message-item"><div class="bot-message">${data.data}</div></div>`;
+                });
+        }
+    });
+</script>
+</body>
+</html>
+2023-05-04 13:33:25.007 TRACE 95850 --- [http-nio-8080-exec-2] org.zalando.logbook.Logbook              : Incoming Request: cd7f89b309c7a1fb
+Remote: 127.0.0.1
+GET http://127.0.0.1:8080/send?message=hi HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+connection: keep-alive
+host: 127.0.0.1:8080
+origin: http://localhost:8080
+referer: http://localhost:8080/
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+2023-05-04 13:33:25.055  INFO 95850 --- [http-nio-8080-exec-2] i.g.f.c.s.impl.DefaultChatgptService     : request url: https://api.openai.com/v1/completions, httpEntity: <ChatRequest(model=text-davinci-003, prompt=hi, maxTokens=500, temperature=1.0, topP=1.0, suffix=null, n=null, stream=null, logprobs=null, echo=null, stop=null, presencePenalty=null, frequencyPenalty=null, bestOf=null, logitBias=null, user=null),[Content-Type:"application/json;charset=UTF-8", Authorization:"Bearer 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"]>
+2023-05-04 13:33:25.726 TRACE 95850 --- [http-nio-8080-exec-2] org.zalando.logbook.Logbook              : Outgoing Response: cd7f89b309c7a1fb
+Duration: 712 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 04 May 2023 04:33:25 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":500,"message":"error","data":"429 Too Many Requests: \"{<EOL>    \"error\": {<EOL>        \"message\": \"You exceeded your current quota, please check your plan and billing details.\",<EOL>        \"type\": \"insufficient_quota\",<EOL>        \"param\": null,<EOL>        \"code\": null<EOL>    }<EOL>}<EOL>\""}
+2023-05-04 18:53:58.243  INFO 26260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-04 18:53:58.250  INFO 26260 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-04 18:53:58.250  INFO 26260 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-05-04 18:53:58.291  INFO 26260 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-04 18:53:58.291  INFO 26260 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 412 ms
+2023-05-04 18:53:58.399  INFO 26260 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-05-04 18:53:58.464  INFO 26260 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-04 18:54:07.476  INFO 26260 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-04 18:54:07.477  INFO 26260 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-04 18:54:07.479  INFO 26260 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-04 18:54:07.506 TRACE 26260 --- [http-nio-8080-exec-1] org.zalando.logbook.Logbook              : Incoming Request: 9402d5aa568841f7
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8080/ HTTP/1.1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+accept-encoding: gzip, deflate, br
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+connection: keep-alive
+host: localhost:8080
+if-modified-since: Wed, 03 May 2023 19:04:00 GMT
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: none
+sec-fetch-user: ?1
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+2023-05-04 18:54:07.521 TRACE 26260 --- [http-nio-8080-exec-1] org.zalando.logbook.Logbook              : Outgoing Response: 9402d5aa568841f7
+Duration: 34 ms
+HTTP/1.1 304 Not Modified
+Connection: keep-alive
+Date: Thu, 04 May 2023 09:54:07 GMT
+Keep-Alive: timeout=60
+Last-Modified: Wed, 03 May 2023 19:04:00 GMT
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+2023-05-04 18:54:11.571 TRACE 26260 --- [http-nio-8080-exec-2] org.zalando.logbook.Logbook              : Incoming Request: a34f4ae1b24fbd9c
+Remote: 127.0.0.1
+GET http://127.0.0.1:8080/send?message=hi HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+connection: keep-alive
+host: 127.0.0.1:8080
+origin: http://localhost:8080
+referer: http://localhost:8080/
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+2023-05-04 18:54:11.622  INFO 26260 --- [http-nio-8080-exec-2] i.g.f.c.s.impl.DefaultChatgptService     : request url: https://api.openai.com/v1/completions, httpEntity: <ChatRequest(model=text-davinci-003, prompt=hi, maxTokens=500, temperature=1.0, topP=1.0, suffix=null, n=null, stream=null, logprobs=null, echo=null, stop=null, presencePenalty=null, frequencyPenalty=null, bestOf=null, logitBias=null, user=null),[Content-Type:"application/json;charset=UTF-8", Authorization:"Bearer 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"]>
+2023-05-04 18:54:12.332 TRACE 26260 --- [http-nio-8080-exec-2] org.zalando.logbook.Logbook              : Outgoing Response: a34f4ae1b24fbd9c
+Duration: 751 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 04 May 2023 09:54:12 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":500,"message":"error","data":"429 Too Many Requests: \"{<EOL>    \"error\": {<EOL>        \"message\": \"You exceeded your current quota, please check your plan and billing details.\",<EOL>        \"type\": \"insufficient_quota\",<EOL>        \"param\": null,<EOL>        \"code\": null<EOL>    }<EOL>}<EOL>\""}
+2023-05-04 18:54:17.890 TRACE 26260 --- [http-nio-8080-exec-3] org.zalando.logbook.Logbook              : Incoming Request: e4e7d00e55ffc351
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8080/ HTTP/1.1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+accept-encoding: gzip, deflate, br
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+cache-control: max-age=0
+connection: keep-alive
+host: localhost:8080
+if-modified-since: Wed, 03 May 2023 19:04:00 GMT
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: none
+sec-fetch-user: ?1
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+2023-05-04 18:54:17.892 TRACE 26260 --- [http-nio-8080-exec-3] org.zalando.logbook.Logbook              : Outgoing Response: e4e7d00e55ffc351
+Duration: 2 ms
+HTTP/1.1 304 Not Modified
+Connection: keep-alive
+Date: Thu, 04 May 2023 09:54:17 GMT
+Keep-Alive: timeout=60
+Last-Modified: Wed, 03 May 2023 19:04:00 GMT
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+2023-05-04 18:54:21.183 TRACE 26260 --- [http-nio-8080-exec-4] org.zalando.logbook.Logbook              : Incoming Request: f9a62d9e163a4aa4
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8080/multi/send HTTP/1.1
+accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+accept-encoding: gzip, deflate, br
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+connection: keep-alive
+host: localhost:8080
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+sec-fetch-dest: document
+sec-fetch-mode: navigate
+sec-fetch-site: none
+sec-fetch-user: ?1
+upgrade-insecure-requests: 1
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+2023-05-04 18:54:21.195  WARN 26260 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2023-05-04 18:54:21.197 TRACE 26260 --- [http-nio-8080-exec-4] org.zalando.logbook.Logbook              : Outgoing Response: f9a62d9e163a4aa4
+Duration: 14 ms
+HTTP/1.1 405 Method Not Allowed
+Allow: POST
+2023-05-04 18:55:05.762 TRACE 26260 --- [http-nio-8080-exec-6] org.zalando.logbook.Logbook              : Incoming Request: d2545f869db1c3a5
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:8080/multi/send HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 0
+host: localhost:8080
+postman-token: 818d586e-62dc-48fb-82c6-ae5f8f320a11
+user-agent: PostmanRuntime/7.32.2
+2023-05-04 18:55:05.786 TRACE 26260 --- [http-nio-8080-exec-6] org.zalando.logbook.Logbook              : Outgoing Response: d2545f869db1c3a5
+Duration: 25 ms
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 04 May 2023 09:55:05 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":500,"message":"error","data":"Required request body is missing: public cc.vayne.dto.ResponseModel<java.lang.String> cc.vayne.controller.Controller.multiSend(javax.servlet.http.HttpServletRequest,java.util.List<io.github.flashvayne.chatgpt.dto.chat.MultiChatMessage>)"}
+2023-05-04 18:56:54.612 TRACE 26260 --- [http-nio-8080-exec-1] org.zalando.logbook.Logbook              : Incoming Request: 82406d94ea930f65
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8080/send HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:8080
+postman-token: b36867e9-44ca-4654-b2d2-c6e06c520d13
+user-agent: PostmanRuntime/7.32.2
+2023-05-04 18:56:54.620  WARN 26260 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'message' for method parameter type String is not present]
+2023-05-04 18:56:54.621 TRACE 26260 --- [http-nio-8080-exec-1] org.zalando.logbook.Logbook              : Outgoing Response: 82406d94ea930f65
+Duration: 10 ms
+HTTP/1.1 400 Bad Request
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+2023-05-04 18:57:08.038  INFO 26912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-05-04 18:57:08.042  INFO 26912 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-04 18:57:08.042  INFO 26912 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-05-04 18:57:08.081  INFO 26912 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-04 18:57:08.081  INFO 26912 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 393 ms
+2023-05-04 18:57:08.196  INFO 26912 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-05-04 18:57:08.253  INFO 26912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-04 18:57:17.284  INFO 26912 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-04 18:57:17.285  INFO 26912 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-05-04 18:57:17.287  INFO 26912 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-05-04 18:57:17.313 TRACE 26912 --- [http-nio-8080-exec-1] org.zalando.logbook.Logbook              : Incoming Request: cb499aff16abf26b
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8080/send HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:8080
+postman-token: 8a322164-78e4-4080-8c88-f6d24f7a31c8
+user-agent: PostmanRuntime/7.32.2
+2023-05-04 18:57:17.333  WARN 26912 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'message' for method parameter type String is not present]
+2023-05-04 18:57:17.334 TRACE 26912 --- [http-nio-8080-exec-1] org.zalando.logbook.Logbook              : Outgoing Response: cb499aff16abf26b
+Duration: 39 ms
+HTTP/1.1 400 Bad Request
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+2023-05-04 18:57:28.384 TRACE 26912 --- [http-nio-8080-exec-4] org.zalando.logbook.Logbook              : Incoming Request: 89caecfb1994cf8e
+Remote: 0:0:0:0:0:0:0:1
+GET http://localhost:8080/ HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+host: localhost:8080
+postman-token: 481b1b4f-82eb-46dd-9bf9-12fa9837dcb4
+user-agent: PostmanRuntime/7.32.2
+2023-05-04 18:57:28.412 TRACE 26912 --- [http-nio-8080-exec-4] org.zalando.logbook.Logbook              : Outgoing Response: 89caecfb1994cf8e
+Duration: 28 ms
+HTTP/1.1 200 OK
+Accept-Ranges: bytes
+Connection: keep-alive
+Content-Language: ko-KR
+Content-Length: 1748
+Content-Type: text/html;charset=UTF-8
+Date: Thu, 04 May 2023 09:57:28 GMT
+Keep-Alive: timeout=60
+Last-Modified: Wed, 03 May 2023 19:04:00 GMT
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+    <link rel="shortcut icon" href="ChatGPT.jpeg" />
+    <style type="text/css">
+        #message-list {
+            width: 100%;
+            height: 500px;
+            overflow-y: scroll;
+        }
+
+        .message-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .user-message {
+            white-space: pre-line;
+            background-color: #eee;
+            border-radius: 5px;
+            padding: 10px;
+            margin-right: 20px;
+        }
+
+        .bot-message {
+            white-space: pre-line;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div>메세지 입력후 Enter </div>
+<input type="text" id="message-input" width="100%">
+<div id="message-list"></div>
+<script>
+    const messageList = document.getElementById('message-list');
+
+    document.getElementById('message-input').addEventListener('keydown', (event) => {
+        if (event.key === 'Enter') {
+            const message = event.target.value;
+            messageList.innerHTML += `<div class="message-item"><div class="user-message">${message}</div></div>`;
+            event.target.value = '';
+            fetch('http://127.0.0.1:8080/send?message=' + message, {
+                method: 'GET'
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    messageList.innerHTML += `<div class="message-item"><div class="bot-message">${data.data}</div></div>`;
+                });
+        }
+    });
+</script>
+</body>
+</html>
+2023-05-04 18:57:42.014 TRACE 26912 --- [http-nio-8080-exec-5] org.zalando.logbook.Logbook              : Incoming Request: b495e2c06e880214
+Remote: 0:0:0:0:0:0:0:1
+POST http://localhost:8080/ HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+connection: keep-alive
+content-length: 0
+host: localhost:8080
+postman-token: 3f274ced-b93b-4ce7-b5c8-ac8c43faae78
+user-agent: PostmanRuntime/7.32.2
+2023-05-04 18:57:42.016  WARN 26912 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2023-05-04 18:57:42.017 TRACE 26912 --- [http-nio-8080-exec-5] org.zalando.logbook.Logbook              : Outgoing Response: b495e2c06e880214
+Duration: 3 ms
+HTTP/1.1 405 Method Not Allowed
+Allow: GET, HEAD
+2023-05-04 18:58:00.354 TRACE 26912 --- [http-nio-8080-exec-6] org.zalando.logbook.Logbook              : Incoming Request: 9d1f3c3b8103b8ef
+Remote: 127.0.0.1
+GET http://127.0.0.1:8080/send?message=hi HTTP/1.1
+accept: */*
+accept-encoding: gzip, deflate, br
+accept-language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7
+connection: keep-alive
+host: 127.0.0.1:8080
+origin: http://localhost:8080
+referer: http://localhost:8080/
+sec-ch-ua: "Chromium";v="112", "Google Chrome";v="112", "Not:A-Brand";v="99"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+sec-fetch-dest: empty
+sec-fetch-mode: cors
+sec-fetch-site: cross-site
+user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36
+2023-05-04 18:58:00.377  INFO 26912 --- [http-nio-8080-exec-6] i.g.f.c.s.impl.DefaultChatgptService     : request url: https://api.openai.com/v1/completions, httpEntity: <ChatRequest(model=text-davinci-003, prompt=hi, maxTokens=500, temperature=1.0, topP=1.0, suffix=null, n=null, stream=null, logprobs=null, echo=null, stop=null, presencePenalty=null, frequencyPenalty=null, bestOf=null, logitBias=null, user=null),[Content-Type:"application/json;charset=UTF-8", Authorization:"Bearer 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"]>
+2023-05-04 18:58:01.042 TRACE 26912 --- [http-nio-8080-exec-6] org.zalando.logbook.Logbook              : Outgoing Response: 9d1f3c3b8103b8ef
+Duration: 683 ms
+HTTP/1.1 200 OK
+Access-Control-Allow-Origin: *
+Connection: keep-alive
+Content-Type: application/json;charset=UTF-8
+Date: Thu, 04 May 2023 09:58:01 GMT
+Keep-Alive: timeout=60
+Transfer-Encoding: chunked
+Vary: Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+
+{"code":500,"message":"error","data":"429 Too Many Requests: \"{<EOL>    \"error\": {<EOL>        \"message\": \"You exceeded your current quota, please check your plan and billing details.\",<EOL>        \"type\": \"insufficient_quota\",<EOL>        \"param\": null,<EOL>        \"code\": null<EOL>    }<EOL>}<EOL>\""}
