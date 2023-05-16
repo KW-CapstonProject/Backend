@@ -2,18 +2,15 @@ package capstonServer.capstonServer.service;
 
 
 
-import capstonServer.capstonServer.entity.User;
+import capstonServer.capstonServer.entity.Users;
 import capstonServer.capstonServer.repository.UsersRepository;
 import capstonServer.capstonServer.security.CustomUserPrincipal;
 import lombok.RequiredArgsConstructor;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
 
 @Service
 @RequiredArgsConstructor
@@ -25,12 +22,12 @@ public class CustomUserDetailsService implements UserDetailsService {
     @Transactional
     public UserDetails loadUserByUsername(String username)
             throws UsernameNotFoundException {
-        User user = usersRepository.findByEmail(username)
+        Users users = usersRepository.findByEmail(username)
                 .orElseThrow(() ->
                         new UsernameNotFoundException("User not found with userId : " + username)
                 );
 
-        return CustomUserPrincipal.create(user,user.getName());
+        return CustomUserPrincipal.create(users, users.getName());
     }
 
 

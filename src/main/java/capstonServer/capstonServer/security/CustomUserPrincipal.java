@@ -1,6 +1,6 @@
 package capstonServer.capstonServer.security;
 
-import capstonServer.capstonServer.entity.User;
+import capstonServer.capstonServer.entity.Users;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -14,29 +14,29 @@ public class CustomUserPrincipal implements UserDetails {
     private Collection<? extends GrantedAuthority> authorities;
 
     private Map<String, Object> attributes;
-    private User user;
+    private Users users;
 
-    public User getUser() {
-        return user;
+    public Users getUser() {
+        return users;
     }
 
-    public CustomUserPrincipal(String email, String password, Collection<? extends GrantedAuthority> authorities, User user, String name) {
+    public CustomUserPrincipal(String email, String password, Collection<? extends GrantedAuthority> authorities, Users users, String name) {
         this.email = email;
         this.password = password;
         this.authorities = authorities;
-        this.user = user;
+        this.users = users;
         this.username=name;
     }
 
-    public static CustomUserPrincipal create(User user, String name) {
+    public static CustomUserPrincipal create(Users users, String name) {
         List<GrantedAuthority> authorities = Collections.
                 singletonList(new SimpleGrantedAuthority("ROLE_USER"));
 
         return new CustomUserPrincipal(
-                user.getEmail(),
-                user.getPassword(),
+                users.getEmail(),
+                users.getPassword(),
                 authorities,
-                user,
+                users,
                 name
         );
     }

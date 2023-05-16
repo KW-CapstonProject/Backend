@@ -1,6 +1,6 @@
 package capstonServer.capstonServer.security.handler;
 
-import capstonServer.capstonServer.http.ExceptionResponse;
+import capstonServer.capstonServer.dto.response.ExceptionResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;

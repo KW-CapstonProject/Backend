@@ -3,9 +3,9 @@ package capstonServer.capstonServer.service;
 import capstonServer.capstonServer.dto.request.UserRequestDto;
 import capstonServer.capstonServer.dto.response.UserResponseDto;
 import capstonServer.capstonServer.entity.AuthProvider;
-import capstonServer.capstonServer.entity.User;
+import capstonServer.capstonServer.entity.Users;
 import capstonServer.capstonServer.enums.Authority;
-import capstonServer.capstonServer.http.Response;
+import capstonServer.capstonServer.dto.response.Response;
 import capstonServer.capstonServer.jwt.JwtTokenProvider;
 import capstonServer.capstonServer.repository.UsersRepository;
 import capstonServer.capstonServer.security.SecurityUtil;
@@ -46,27 +46,27 @@ public class UsersService {
             return response.fail("이미 회원가입된 이메일입니다.", HttpStatus.BAD_REQUEST);
         }
 
-        User user = User.builder()
+        Users users = Users.builder()
                 .email(signUp.getEmail())
                 .password(passwordEncoder.encode(signUp.getPassword()))
                 .name(signUp.getName())
                 .provider(AuthProvider.local)
                 .roles(Collections.singletonList(Authority.ROLE_USER.name()))
                 .build();
-        usersRepository.save(user);
+        usersRepository.save(users);
 
-        return response.success(user, "회원가입에 성공하셨습니다.", HttpStatus.CREATED);
+        return response.success(users, "회원가입에 성공하셨습니다.", HttpStatus.CREATED);
     }
 
     public ResponseEntity<?> login(UserRequestDto.Login login) {
-        User user = usersRepository.findByEmail(login.getEmail()).orElseThrow(() -> new NoSuchElementException("유저가 없습니다"));
+        Users users = usersRepository.findByEmail(login.getEmail()).orElseThrow(() -> new NoSuchElementException("유저가 없습니다"));
 
         if (usersRepository.findByEmail(login.getEmail()).orElse(null) == null) {
             return response.fail("해당하는 유저가 존재하지 않습니다.", HttpStatus.BAD_REQUEST);
         }
 
 
-        if (!passwordEncoder.matches(login.getPassword(), user.getPassword())) {
+        if (!passwordEncoder.matches(login.getPassword(), users.getPassword())) {
             return response.fail("비밀번호가 일치하지 않습니다.", HttpStatus.BAD_REQUEST);
         }
 
@@ -124,16 +124,16 @@ public class UsersService {
     public ResponseEntity<?> kakaoLogin(String access_Token) throws IOException {
         Map<String, Object> userInfo = kaKaoService.getUserInfo(access_Token);
 
-        User user = User.builder()
+        Users users = Users.builder()
                 .email(userInfo.get("email").toString())
                 .password(null)
                 .name(userInfo.get("nickname").toString())
                 .provider(AuthProvider.kakao)
                 .roles(Collections.singletonList(Authority.ROLE_USER.name()))
                 .build();
-        usersRepository.save(user);
+        usersRepository.save(users);
 
-        return response.success("회원가입에 성공했습니다.", String.valueOf(user), HttpStatus.CREATED);
+        return response.success("회원가입에 성공했습니다.", String.valueOf(users), HttpStatus.CREATED);
 
     }
 
@@ -165,35 +165,35 @@ public class UsersService {
         // SecurityContext에 담겨 있는 authentication userEamil 정보
         String userEmail = SecurityUtil.getCurrentUserEmail();
 
-        User user = usersRepository.findByEmail(userEmail)
+        Users users = usersRepository.findByEmail(userEmail)
                 .orElseThrow(() -> new UsernameNotFoundException("No authentication information."));
 
         // add ROLE_ADMIN
-        user.getRoles().add(Authority.ROLE_ADMIN.name());
-        usersRepository.save(user);
+        users.getRoles().add(Authority.ROLE_ADMIN.name());
+        usersRepository.save(users);
 
         return response.success();
     }
 
     public String tempPassword(String confirm, String email) {
         System.out.print("시작");
-        User user = usersRepository.findByEmail(email)
+        Users users = usersRepository.findByEmail(email)
                 .orElseThrow(() -> new UsernameNotFoundException("No authentication information."));
-        user.setPassword(confirm);
-        usersRepository.save(user);
-        System.out.print("비밀번호"+ user.getPassword());
-        return user.getPassword();
+        users.setPassword(confirm);
+        usersRepository.save(users);
+        System.out.print("비밀번호"+ users.getPassword());
+        return users.getPassword();
     }
 
     public ResponseEntity<?> updatePassword(UserRequestDto.passwordConfirm password) {
 //        User user = usersRepository.findByEmail(email)
 //                .orElseThrow(() -> new IllegalStateException("이메일 찾지 못함"));
-        User user = usersRepository.findByEmail(password.getEmail()).orElseThrow(() -> new NoSuchElementException("유저가 없습니다"));
-        String TruePassword=user.getPassword();
+        Users users = usersRepository.findByEmail(password.getEmail()).orElseThrow(() -> new NoSuchElementException("유저가 없습니다"));
+        String TruePassword= users.getPassword();
         boolean check=passwordEncoder.matches(password.getCheckpassword(),TruePassword);
         if(check){
-            user.setPassword(password.getChangepassword());
-            usersRepository.save(user);
+            users.setPassword(password.getChangepassword());
+            usersRepository.save(users);
             return response.success();
         }
         else{

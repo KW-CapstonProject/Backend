@@ -2,8 +2,8 @@ package capstonServer.capstonServer.controller;
 
 
 import capstonServer.capstonServer.dto.request.UserRequestDto;
-import capstonServer.capstonServer.http.Response;
-import capstonServer.capstonServer.http.ResponseMsg;
+import capstonServer.capstonServer.dto.response.Response;
+import capstonServer.capstonServer.dto.response.ResponseMsg;
 import capstonServer.capstonServer.service.EmailService;
 import capstonServer.capstonServer.service.KaKaoService;
 import capstonServer.capstonServer.service.UsersService;
