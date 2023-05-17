@@ -36,6 +36,8 @@ dependencies {
 	implementation 'io.jsonwebtoken:jjwt-impl:0.11.2'
 	implementation 'io.jsonwebtoken:jjwt-jackson:0.11.2'
 	implementation 'ai.djl:djl-zero:0.21.0'
+	implementation 'ai.djl.spring:djl-spring-boot-starter-mxnet-auto:0.20'
+	implementation 'ai.djl.spring:djl-spring-boot-starter-pytorch-auto:0.20'
 
 	//AppProperties
 	annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
@@ -84,12 +86,11 @@ dependencies {
 
 		// PyTorch model zoo (optional)
 		implementation 'ai.djl.pytorch:pytorch-model-zoo:0.19.0'
-		implementation 'ai.djl.mxnet:mxnet-model-zoo:0.19.0'
+
 
 		// PyTorch native library (required for PyTorch engine)
 		implementation 'ai.djl.pytorch:pytorch-native-auto:1.8.1' // or your platform-specific classifier
 
-		implementation files('system/path/to/jar/mxnet-full_2.11-osx-x86_64-cpu-1.3.1-SNAPSHOT.jar')
 		// Other dependencies you may need, such as JavaFX
 		// ...
 
