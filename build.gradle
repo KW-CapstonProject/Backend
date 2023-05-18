@@ -24,6 +24,7 @@ configurations {
 
 
 repositories {
+
 	mavenCentral()
 }
 
@@ -52,6 +53,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	compileOnly 'org.projectlombok:lombok'
 
+
+	//lombok
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
@@ -74,29 +77,31 @@ dependencies {
 	// websocket
 	implementation 'org.springframework.boot:spring-boot-starter-websocket'
 
-	implementation 'org.apache.httpcomponents:httpclient:4.5.13'
-
 	//image
 
-	dependencies {
-		implementation 'ai.djl:api:0.19.0'
-
-		// PyTorch engine
-		implementation 'ai.djl.pytorch:pytorch-engine:0.19.0'
-
-		// PyTorch model zoo (optional)
-		implementation 'ai.djl.pytorch:pytorch-model-zoo:0.19.0'
 
 
-		// PyTorch native library (required for PyTorch engine)
-		implementation 'ai.djl.pytorch:pytorch-native-auto:1.8.1' // or your platform-specific classifier
 
-		// Other dependencies you may need, such as JavaFX
-		// ...
+
+	implementation 'ai.djl.pytorch:pytorch-native-cpu:2.0.0:osx-aarch64'
+	implementation 'ai.djl.pytorch:pytorch-jni:2.0.0-0.22.1'
+	implementation 'ai.djl.pytorch:pytorch-engine:0.22.0'
+
+
+
+//		implementation 'ai.djl:api:0.19.0'
+//
+//		// PyTorch engine
+//		implementation 'ai.djl.pytorch:pytorch-engine:0.19.0'
+//
+//		// PyTorch model zoo (optional)
+//		implementation 'ai.djl.pytorch:pytorch-model-zoo:0.19.0'
+//
+//
+//		// PyTorch native library (required for PyTorch engine)
+//		implementation 'ai.djl.pytorch:pytorch-native-auto:1.8.1' // or your platform-specific classifier
 
 		testImplementation 'junit:junit:3.8.1'
-	}
-
 
 }
 tasks.named('test') {
