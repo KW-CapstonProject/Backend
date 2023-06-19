@@ -10,6 +10,7 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Builder
@@ -21,8 +22,9 @@ import java.util.stream.Collectors;
 public class Users extends BaseTime implements UserDetails {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idx;
+    @GeneratedValue
+    @Column(name = "users_id", columnDefinition = "BINARY(16)")
+    private UUID id;
 
     @Column
     private String email;
@@ -43,7 +45,7 @@ public class Users extends BaseTime implements UserDetails {
     @OneToMany(mappedBy = "users", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JsonBackReference
     @Builder.Default
-    private List<PhotoContest> photoContests =new ArrayList<>();
+    private List<Contest> contestList =new ArrayList<>();
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

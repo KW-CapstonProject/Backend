@@ -1,16 +1,14 @@
 package capstonServer.capstonServer.service;
 
-import java.util.Optional;
-import java.util.Random;
-
-import javax.mail.Message.RecipientType;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeMessage;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.MailException;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
+
+import javax.mail.Message.RecipientType;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
+import java.util.Random;
 
 @Service
 public class EmailServiceImpl implements EmailService{
@@ -97,26 +95,17 @@ public class EmailServiceImpl implements EmailService{
 
     public static String createKey() {
         StringBuffer key = new StringBuffer();
-        Random rnd = new Random();
+        //Random rnd = new Random();
+        Random random = new Random();
 
-        for (int i = 0; i < 8; i++) { // 인증코드 8자리
-            int index = rnd.nextInt(3); // 0~2 까지 랜덤
+        // Generate and send 4 random numbers
+        for (int i = 0; i < 4; i++) {
+            key.append(random.nextInt(10)); // Change the range as per your requirements
 
-            switch (index) {
-                case 0:
-                    key.append((char) ((int) (rnd.nextInt(26)) + 97));
-                    //  a~z  (ex. 1+97=98 => (char)98 = 'b')
-                    break;
-                case 1:
-                    key.append((char) ((int) (rnd.nextInt(26)) + 65));
-                    //  A~Z
-                    break;
-                case 2:
-                    key.append((rnd.nextInt(10)));
-                    // 0~9
-                    break;
-            }
         }
+
+
+
         return key.toString();
     }
 
