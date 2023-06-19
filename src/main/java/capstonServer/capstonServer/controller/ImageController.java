@@ -40,7 +40,7 @@
 //        //ImageIO.setUseCache(false);
 //
 //
-//        Criteria<NDList, NDList> criteria = Criteria.builder()
+//        Criteria<NDList, NDList> criteria = Criteria.builder()ㅎ
 //                .setTypes(NDList.class, NDList.class)
 //                .optModelPath(Paths.get(modelPath))
 //                .optDevice(Device.cpu())
