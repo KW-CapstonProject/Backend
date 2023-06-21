@@ -1,0 +1,52 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@1308.v58d48a_763b_31">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@2.2133.ve46a_6113dfc3"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@2.2133.ve46a_6113dfc3">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <com.coravy.hudson.plugins.github.GithubProjectProperty plugin="github@1.37.1">
+      <projectUrl>https://github.com/KW-CapstonProject/Backend.git/</projectUrl>
+      <displayName></displayName>
+    </com.coravy.hudson.plugins.github.GithubProjectProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@3673.v5b_dd74276262">
+    <script>pipeline {
+   agent any
+   stages {
+       stage(&apos;Github&apos;) {
+           steps {
+               git branch: &apos;main&apos;, url: &apos;https://github.com/KW-CapstonProject/Backend.git&apos;
+           }
+       }
+       stage(&apos;Build&apos;) {
+           steps {
+              
+                   sh &quot;./gradlew clean&quot;
+               
+           }
+       }
+       stage(&apos;Deploy&apos;) {
+           steps {
+               dir(&apos;./build/libs&apos;) {
+                   sshagent(credentials: [&apos;jenkins-ssh&apos;]) {
+                        // sh &apos;scp -o Backend-0.0.1-SNAPSHOT.jar ubuntu@52.63.228.148:/home/ubuntu&apos;
+                        sh &apos;ssh ubuntu@52.63.228.148 &quot;sh run.sh&quot; &amp;&apos;
+                   }
+               }
+           }
+       }
+   }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

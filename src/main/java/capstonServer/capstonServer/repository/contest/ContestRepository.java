@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @Primary
 @Repository
-public interface ContestRepository extends JpaRepository<Contest,Long> ,ContestRepositoryCustom{
+public interface ContestRepository extends JpaRepository<Contest,Long> , ContestCustomRepository {
 }

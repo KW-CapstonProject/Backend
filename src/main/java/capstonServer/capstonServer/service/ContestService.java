@@ -7,9 +7,9 @@ import capstonServer.capstonServer.dto.response.Response;
 import capstonServer.capstonServer.entity.Contest;
 import capstonServer.capstonServer.entity.Photo;
 import capstonServer.capstonServer.entity.Users;
-import capstonServer.capstonServer.repository.contest.ContestRepository;
 import capstonServer.capstonServer.repository.PhotoRepository;
 import capstonServer.capstonServer.repository.UsersRepository;
+import capstonServer.capstonServer.repository.contest.ContestRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Pageable;
@@ -120,13 +120,14 @@ public class ContestService {
     public ResponseEntity createContest(Users users, ContestRequest contestRequest,  MultipartFile[] files) throws IOException {
         try {
             Contest contest = Contest.builder()
-                    .author(users.getName())
                     .title(contestRequest.getTitle())
                     .author(users.getName())
                     .contents(contestRequest.getContents())
+                    .category(contestRequest.getCategory())
+                    .style(contestRequest.getStyle())
                     .users(users)
                     .build();
-//            sub_category.forEach(id -> study.getJobCategoryList().add(new JobCategory(id)));
+
             Contest saveContest=contestRepository.save(contest);
             Users saveUsers = usersRepository.findById(users.getId()).get();
             saveUsers.getContestList().add(contest);
@@ -146,9 +147,11 @@ public class ContestService {
                 }
 
             }
-            return response.success(new ContestResponse(contest), "컨테스트 글 등록", HttpStatus.OK);
+            System.out.println(saveContest.getPhotoList());
+
+            return response.success(new ContestResponse(contest), "컨테스트 글 등록 성공", HttpStatus.OK);
         } catch (Exception e) {
-            return response.fail("컨테스트 글 등록 실패",HttpStatus.BAD_REQUEST);
+            return response.fail(e,"컨테스트 글 등록 실패",HttpStatus.BAD_REQUEST);
         }
     }
 

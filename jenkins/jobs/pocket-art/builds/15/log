@@ -1,0 +1,82 @@
+Started by user [8mha:////4G3CwpVauxuIzseW8q5jm9RIaz/apH9d/J8n3ZilVvspAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgY+/dLi1CL9ytSizFxDU0sANTb0r8MAAAA=[0mEom-Ye-Rim
+[8mha:////4ETeUL8UKfqKxM+R9XWiua4j+V2rwuaRmJi6cXfoT1urAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4Bs96ksp6RFWWlG5AXG3nwEk8vI6gOtSCoP0nJ+DVRV4AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4HKqeNV4qxwNFpXc9f1TS+65It9yBHzrF92i055OBGPoAAAAqB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgYZ/dzEvMT0VP3k/NyC0pLUIn2NpNLMnBLdzDxNfQB9z6/O0QAAAA==[0mJenkins in /var/jenkins_home/workspace/pocket-art
+[8mha:////4J9bOHNsZRSiazd9pLOT1shNGFsNcVt63K2Zhyj/RQQQAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4KZ5Kl3XEI+pBqNpQLZyk3Q6M1qnS/YZrjzJA1R+2pjQAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4ACmV3nFM7QfiEW41lBw+2Q7pWtkc0kCwkFJCldzPcufAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Github)
+[8mha:////4OiEvqYHfo/TMn6NgNC17zj5uQ858lX/dxxkH49FAil0AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] git
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/pocket-art/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/KW-CapstonProject/Backend.git # timeout=10
+Fetching upstream changes from https://github.com/KW-CapstonProject/Backend.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/KW-CapstonProject/Backend.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision b5a1d2f3daed59263865d3182246dbaa0925eff6 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f b5a1d2f3daed59263865d3182246dbaa0925eff6 # timeout=10
+ > git branch -a -v --no-abbrev # timeout=10
+ > git branch -D main # timeout=10
+ > git checkout -b main b5a1d2f3daed59263865d3182246dbaa0925eff6 # timeout=10
+Commit message: "build fix"
+ > git rev-list --no-walk b5a1d2f3daed59263865d3182246dbaa0925eff6 # timeout=10
+[8mha:////4HF9K74DzWGf3xopcX03DJFxkj3VNxx6zQBf7r0wXsYMAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4LWEmgYbiWJ6fA6tj7+3C77NeGY1hpLJfwWRPf/eVGc3AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4H2MKEJwA5KQUxT7DM9lfoT6bAgnBjRGbNNFhw9fr16jAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] stage
+[8mha:////4PnPDqwspulGpmdZpSWkMo4pqlKDDh0kx9atSvcbtkDZAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] { (Build)
+[8mha:////4L3biPDjQe7lGyGoPpfVW6aBD5m+k3riTsP263gQRV+vAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggysXWsbBkaT4AJIoT5nwCRVJ7Iq3kH0cxYucXOvm3e8wXrGOBIQTOrcDAYO8O8m3RZLFMYro4ys3RhHWEkp5hQWVCvTgsKSgqWVDWsOGwUdo6iQZ1gy628y8ZJ1M05hfIdONSmH+EBFS/mJEP6whxgd5v6SPjz/BXA7BPUbfupvX8DpQJrNb4AAAA=[0m[Pipeline] sh
++ ./gradlew clean
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :cleanQuerydslSourcesDir
+> Task :clean
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+See https://docs.gradle.org/8.0/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 6s
+2 actionable tasks: 2 executed
+[8mha:////4EjgVIWOde5/yEmFjryWEZ3511TNTDIiIXbJIeKJ+eXCAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyGUvHypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzN4nqNv9p9o3geV5574AAAA=[0m[Pipeline] }
+[8mha:////4MJP/IxTwxXGG8jgmhKkGuUiDgUaTvLuPlVlyIaej2QSAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICEh2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7Bq/le42+AAAA[0m[Pipeline] // stage
+[8mha:////4BkQB/dy14csLTFZTb1RLLWgE7mTy+6NracCvv3h9A4gAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjJKgQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHILYMxWb3OZZvBXXnAcEAAAA=[0m[Pipeline] stage
+[8mha:////4DQSkwi30H8JHWCzws5RaWyP7HZq/k5ouTg+6dC07NBoAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/s94rDCAAAA[0m[Pipeline] { (Deploy)
+[8mha:////4K/w0k2U1u1VCLgrcj/zVVAW3zh3oCSLmZ5ntDo7wPUlAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohULDAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD1+IXOLCAAAA[0m[Pipeline] dir
+Running in /var/jenkins_home/workspace/pocket-art/build/libs
+[8mha:////4D6PJ/j1jk6gLWN8A9IBKxLdwf1cgOVebFwu1c8/DX+4AAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUTCAhpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD0rlhNLCAAAA[0m[Pipeline] {
+[8mha:////4OsS2uRC5qQu9kl8QFYADb7VaF/TPPGdowx/rIbZX74hAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUbCDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASnCIIrCAAAA[0m[Pipeline] sshagent
+[ssh-agent] Using credentials yerim
+[ssh-agent] Looking for ssh-agent implementation...
+[ssh-agent]   Exec ssh-agent (binary ssh-agent on a remote machine)
+$ ssh-agent
+SSH_AUTH_SOCK=/tmp/ssh-SnELmn07aph2/agent.3506
+SSH_AGENT_PID=3509
+Running ssh-add (command line suppressed)
+Identity added: /var/jenkins_home/workspace/pocket-art/build/libs@tmp/private_key_5935050576855567913.key (eom-yelim@eom-yelim-ui-MacBookAir.local)
+[ssh-agent] Started.
+[8mha:////4MrtKjdwCdRuO8nv4slpe5nKI75fD/TA+8n1z8zhjTycAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycogU2BDqxBp14QShCSFp9H9JUtKJE3E17kCgEhMeLNuS9Z4vqIKHhrxmVmFvMHSGDW7UObFEvr84SszSmXWEgZxirUotSXWca0tRwayihAWHpcLOUTCoI6y4FXdRO4G6PkWftwOH0sgbPKDgmRyFj98yeVhfRxkIf5y/AJiGCOV2n223+TyrN7xWSV3CAAAA[0m[Pipeline] {
+[8mha:////4LBkiNfkqVMZ/8iwHv7qeQY0iMJYN/5TBiupubN6XcegAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICtIgqreWGF5jYGCfWnbEdkooX8TX+QCASFVusdraZ5wuWKcKRo8XWUOcoNQ6D7+20cODYXTwP2PIZG6bE3qA0g2Rt6hklZwNzihIWAlaGGs/Jkc2wFq26q8orstUpx+k7CCidvsEDCjGZs4r5C2OEzbXXienn+SuAMWQo99tP7cIbaOP4NL4AAAA=[0m[Pipeline] sh
++ scp backend-0.0.1-SNAPSHOT.jar ubuntu@52.63.228.148:/home/ubuntu
+Host key verification failed.
+lost connection
+[8mha:////4JEwRQG1hX7lB7SDaHWOrNX1ft4CIG5f46J5kb8nNLcfAAAAox+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKC0iIqWisNLzCJMXasO8d2cCpexNf4A4FIVGyx2tlmni9YxwBHDhqtot5QbA16N+p5YebQXx1ntHzBlimyU9io3HCnTgs2nBQsKUpYCdgoah1HQzrBVlh5l5WTpKtzCvN3EFCaboAHFGI2JxnSF6YAu9vYRaaf568AJu8TlHX9qf0b7E/nQb4AAAA=[0m[Pipeline] }
+$ ssh-agent -k
+unset SSH_AUTH_SOCK;
+unset SSH_AGENT_PID;
+echo Agent pid 3509 killed;
+[ssh-agent] Stopped.
+[8mha:////4C0QHbhBlgzDyLttwTqlWKSFSFFabecWGYs/ZUX6CFwCAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrdPtf28AEud0rYvgAAAA==[0m[Pipeline] // sshagent
+[8mha:////4DTqd6HKdMdOu7MrkQUneJJCH0egop20Km8Ym7buquuYAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEAUSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryt8+1PXwAAHdIsr4AAAA=[0m[Pipeline] }
+[8mha:////4GDrp3jNQ9Z7zF7I4QLNGqUfSeiHy1S55uNgBjWTuZgKAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikBAFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryt8+1PXwANLmr6b4AAAA=[0m[Pipeline] // dir
+[8mha:////4EQ5vg9ke6bPKwlzkNAJHPNcP0Fc8MhjXgXIgk303g5SAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiKNIgqrRWGl5gYmOcWHfGdkgqXsTX+AMWkajYYrWzzbzesI4BThwM9poGS7Gz6N1o8sKJw3B1PGHPF+yYIjuNrZ5aVrpZsOWkYUlRwkrARlPnOFoyCbailw9ZOUmmOqeQv6OA0qo7PKEQ2ZxkSF+YA+xuo4pMP89fAczeJygPda59/QEM+zgYvgAAAA==[0m[Pipeline] }
+[8mha:////4EUH2dxh4memqcpjHYXNOdvDgoKIsxsf+wwdqPx3dnz0AAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIikBAFSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryd8i13X8AE3ltSr4AAAA=[0m[Pipeline] // stage
+[8mha:////4IvvV0MqIDHfa1HuQWgQTaW0lkmyOmnNFgisPJ51v7MXAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKREAUSoqK10vACkxjjxLoL9oWk4kV8jT8QEYmKrXammdcbyxRx5OhUY6n1lCqvutC76amBY3sNPKiGL6piShysKu1Qcm1PM5YsFvOyHAuNlaUqcPLkBGvdmIcpgiFXnCVO7qCR+/qOJzI9lcVE+cIYsbn1dWL6df4GMHadIN/uBdnuA+oSoWS9AAAA[0m[Pipeline] }
+[8mha:////4KIXKn0loK+YcswtWrvpmNCPkN8QM9gBXFk8rxPCITUvAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRoEKIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsXZLsP+a6lx70AAAA=[0m[Pipeline] // node
+[8mha:////4CTVupGuc3IRd7puY+o24CroNKF4nvrjcNAY6sVQCraZAAAAoh+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJBUCIqWisNLzCJMU6su2BfSCpexNf4AxGRqNhqZ5p5vbFMEUeOTjWWWk+p8qoLvZueGji218CDaviiKqbEwarSDiXX9jRjyWIxL8ux0FhZqgInT06w1o15mCIYcsVZ4uQOGrmv73gi01NZTJQvjBGbW18npl/nbwBj1wny/VaQ7T67L+52vQAAAA==[0m[Pipeline] End of Pipeline
+ERROR: script returned exit code 1
+Finished: FAILURE

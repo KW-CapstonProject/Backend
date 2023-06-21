@@ -1,0 +1,13 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2023-06-21 17:53:10.419 UTC</timestamp>
+  <md5sum>1acd552f00a6cc4f8e0322b41e6cf166</md5sum>
+  <fileName>Credential id=jenkins-ssh name=yerim</fileName>
+  <usages>
+    <entry>
+      <string>pocket-art</string>
+      <ranges>9</ranges>
+    </entry>
+  </usages>
+  <facets/>
+</fingerprint>

@@ -1,0 +1,89 @@
+Started by user [8mha:////4G3CwpVauxuIzseW8q5jm9RIaz/apH9d/J8n3ZilVvspAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgY+/dLi1CL9ytSizFxDU0sANTb0r8MAAAA=[0mEom-Ye-Rim
+[8mha:////4ETeUL8UKfqKxM+R9XWiua4j+V2rwuaRmJi6cXfoT1urAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4Bs96ksp6RFWWlG5AXG3nwEk8vI6gOtSCoP0nJ+DVRV4AAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4HKqeNV4qxwNFpXc9f1TS+65It9yBHzrF92i055OBGPoAAAAqB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgYZ/dzEvMT0VP3k/NyC0pLUIn2NpNLMnBLdzDxNfQB9z6/O0QAAAA==[0mJenkins in /var/jenkins_home/workspace/pocket-art
+[8mha:////4J9bOHNsZRSiazd9pLOT1shNGFsNcVt63K2Zhyj/RQQQAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4KZ5Kl3XEI+pBqNpQLZyk3Q6M1qnS/YZrjzJA1R+2pjQAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4ACmV3nFM7QfiEW41lBw+2Q7pWtkc0kCwkFJCldzPcufAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Github)
+[8mha:////4OiEvqYHfo/TMn6NgNC17zj5uQ858lX/dxxkH49FAil0AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] git
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/pocket-art/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/KW-CapstonProject/Backend.git # timeout=10
+Fetching upstream changes from https://github.com/KW-CapstonProject/Backend.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.30.2'
+ > git fetch --tags --force --progress -- https://github.com/KW-CapstonProject/Backend.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/login^{commit} # timeout=10
+Checking out Revision da06bacffcb446c519719efca734f4357171baf2 (refs/remotes/origin/login)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f da06bacffcb446c519719efca734f4357171baf2 # timeout=10
+ > git branch -a -v --no-abbrev # timeout=10
+ > git branch -D login # timeout=10
+ > git checkout -b login da06bacffcb446c519719efca734f4357171baf2 # timeout=10
+Commit message: "properties 파일 수정"
+ > git rev-list --no-walk da06bacffcb446c519719efca734f4357171baf2 # timeout=10
+[8mha:////4HF9K74DzWGf3xopcX03DJFxkj3VNxx6zQBf7r0wXsYMAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4LWEmgYbiWJ6fA6tj7+3C77NeGY1hpLJfwWRPf/eVGc3AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4H2MKEJwA5KQUxT7DM9lfoT6bAgnBjRGbNNFhw9fr16jAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] stage
+[8mha:////4PnPDqwspulGpmdZpSWkMo4pqlKDDh0kx9atSvcbtkDZAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] { (Build)
+[8mha:////4L3biPDjQe7lGyGoPpfVW6aBD5m+k3riTsP263gQRV+vAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggysXWsbBkaT4AJIoT5nwCRVJ7Iq3kH0cxYucXOvm3e8wXrGOBIQTOrcDAYO8O8m3RZLFMYro4ys3RhHWEkp5hQWVCvTgsKSgqWVDWsOGwUdo6iQZ1gy628y8ZJ1M05hfIdONSmH+EBFS/mJEP6whxgd5v6SPjz/BXA7BPUbfupvX8DpQJrNb4AAAA=[0m[Pipeline] sh
++ ./gradlew bootJar
+Starting a Gradle Daemon (subsequent builds will be faster)
+Sending interrupt signal to process
+Aborted by [8mha:////4G3CwpVauxuIzseW8q5jm9RIaz/apH9d/J8n3ZilVvspAAAAmh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyuEgY+/dLi1CL9ytSizFxDU0sANTb0r8MAAAA=[0mEom-Ye-Rim
+The message received from the daemon indicates that the daemon has disappeared.
+Build request sent: Build{id=3524e961-7d43-4dd3-b8d8-6d5b1c59c0e2, currentDir=/var/jenkins_home/workspace/pocket-art}
+Attempting to read last messages from the daemon log...
+Daemon pid: 1104
+  log file: /root/.gradle/daemon/7.6.1/daemon-1104.out.log
+----- Last  20 lines from daemon log file - daemon-1104.out.log -----
+2023-06-21T17:45:50.193+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [95de44bc-3d44-4cc4-bef5-3a0708226dac port:43445, addresses:[localhost/127.0.0.1]]
+2023-06-21T17:45:50.193+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [95de44bc-3d44-4cc4-bef5-3a0708226dac port:43445, addresses:[localhost/127.0.0.1]]
+2023-06-21T17:45:50.194+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2023-06-21T17:45:50.195+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2023-06-21T17:45:50.196+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2023-06-21T17:45:50.196+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2023-06-21T17:45:50.196+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2023-06-21T17:45:50.198+0000 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=3524e961-7d43-4dd3-b8d8-6d5b1c59c0e2, currentDir=/var/jenkins_home/workspace/pocket-art}. Dispatching build started information...
+2023-06-21T17:45:50.198+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 20: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@5536040e
+2023-06-21T17:45:50.201+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [PATH, WORKSPACE_TMP, COPY_REFERENCE_FILE_LOG, RUN_DISPLAY_URL, HUDSON_HOME, RUN_CHANGES_DISPLAY_URL, JOB_URL, JAVA_HOME, HUDSON_COOKIE, BUILD_ID, JENKINS_VERSION, JENKINS_NODE_COOKIE, LANG, JOB_NAME, NODE_LABELS, HUDSON_URL, JENKINS_SERVER_COOKIE, WORKSPACE, JENKINS_SLAVE_AGENT_PORT, PWD, RUN_TESTS_DISPLAY_URL, JENKINS_URL, BUILD_TAG, STAGE_NAME, CI, EXECUTOR_NUMBER, HUDSON_SERVER_COOKIE, JENKINS_UC, JOB_BASE_NAME, JENKINS_INCREMENTALS_REPO_MIRROR, JENKINS_HOME, REF, BUILD_NUMBER, NODE_NAME, BUILD_DISPLAY_NAME, BUILD_URL, HOSTNAME, RUN_ARTIFACTS_DISPLAY_URL, JOB_DISPLAY_URL, JENKINS_UC_EXPERIMENTAL, HOME, SHLVL]
+2023-06-21T17:45:50.204+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 18: received class org.gradle.launcher.daemon.protocol.CloseInput
+2023-06-21T17:45:50.205+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 18: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@56cd7ac8
+2023-06-21T17:45:50.207+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2023-06-21T17:45:50.208+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 1104). The daemon log file: /root/.gradle/daemon/7.6.1/daemon-1104.out.log
+2023-06-21T17:45:50.211+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogAndCheckHealth] Starting build in new daemon [memory: 512 MiB]
+2023-06-21T17:45:50.213+0000 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] Closing daemon's stdin at end of input.
+2023-06-21T17:45:50.213+0000 [INFO] [org.gradle.launcher.daemon.server.exec.ForwardClientInput] The daemon will no longer process any standard input.
+2023-06-21T17:45:50.219+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2023-06-21T17:45:50.219+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=f0cabcf8-5a3b-4ab9-b3ce-0b3d8038952c,javaHome=/opt/java/openjdk,daemonRegistryDir=/root/.gradle/daemon,pid=1104,idleTimeout=10800000,priority=NORMAL,daemonOpts=--add-opens=java.base/java.util=ALL-UNNAMED,--add-opens=java.base/java.lang=ALL-UNNAMED,--add-opens=java.base/java.lang.invoke=ALL-UNNAMED,--add-opens=java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens=java.base/java.nio.charset=ALL-UNNAMED,--add-opens=java.base/java.net=ALL-UNNAMED,--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED,-XX:MaxMetaspaceSize=256m,-XX:+HeapDumpOnOutOfMemoryError,-Xms256m,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+Daemon vm is shutting down... The daemon has exited normally or was terminated in response to a user interrupt.
+----- End of the daemon log -----
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Gradle build daemon disappeared unexpectedly (it may have been killed or may have crashed)
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+> Task :compileJava
+script returned exit code 1
+[8mha:////4EjgVIWOde5/yEmFjryWEZ3511TNTDIiIXbJIeKJ+eXCAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyGUvHypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzN4nqNv9p9o3geV5574AAAA=[0m[Pipeline] }
+[8mha:////4MJP/IxTwxXGG8jgmhKkGuUiDgUaTvLuPlVlyIaej2QSAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICEh2iSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7Bq/le42+AAAA[0m[Pipeline] // stage
+[8mha:////4BkQB/dy14csLTFZTb1RLLWgE7mTy+6NracCvv3h9A4gAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjJKgQFa3lhheY2Bgn1l2wLyQVL+Jr/IFAJCq22llpNc8XlDnBgZKXjcM2YK6D7GLvpyYHSu0l0iAbOsuaMFN0UrtBk3XHGTWxgzmigIWCpcM6Ug7oGVaqMXdTRYO+OnGatr2CItgbPECoycwm8RfGBOtrbzPhz/NXAGPHILYMxWb3OZZvBXXnAcEAAAA=[0m[Pipeline] stage
+[8mha:////4DQSkwi30H8JHWCzws5RaWyP7HZq/k5ouTg+6dC07NBoAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUDLAgpq5RFk4QmhDSRv+Xn5R24kRcjTvQUokJD5ZtyXqvNxSR4UTsRGOx9RhrL7rQuymJgbi9BhpEQxdRE0YKVig7KDK2WqqiZGFRlsNKwtpiHSh6dAk2stEPXQaNrjwnnrajhNybOzwhkxM5aU7fMjJsb72JhD/OXwCMXYJ8t5/tMD+LD/s94rDCAAAA[0m[Pipeline] { (Deploy)
+Stage "Deploy" skipped due to earlier failure(s)
+[8mha:////4JcKd+DbDBcf1dMev0M6/N80veRQl2QQrPSlawzulC/7AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiGigQVVrLDS8wsTFOrDtjOyQVL+Jr/IFAJCq2WO1sM88XLFOEI0eLraHOUWocBt/baeHAsbt4HrDlMzZMib1BaQbJ2tQzSs4G5hQlLASsDDWekyObYS1adVeVV2SrU47TdxBQOn2DBxRiMmcV8xfGCJtrrxPTz/NXAGMIGcrt/lO7NzQyjOK+AAAA[0m[Pipeline] }
+[8mha:////4MjzHZwhKqWABWn8rQMswtZgOVnqPdO8AtE8cYoAZmE9AAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiCiQkRJXWcsMLTGyME+vO2A5JxYv4Gn8gEImKLVY728zzBcsU4cjRYmuoc5Qah8H3dlo4cOwungds+YwNU2JvUJpBsjb1jJKzgTlFCQsBK0ON5+TIZliLVt1V5RXZ6pTj9B0ElE7f4AGFmMxZxfyFMcLm2uvE9PP8FcAYQoZyu//U7g1b0dOKvgAAAA==[0m[Pipeline] // stage
+[8mha:////4HvYs6XhfJvVOSYW4P61dY5WUgUHYIthbdGD8oFO1NOeAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMIREg1CVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Nu9INt9APRJVd+9AAAA[0m[Pipeline] }
+[8mha:////4CHvGOAnoG7WjJB+6I6sn7HAr8jYiWsJyRBSzV13tyWfAAAAoh+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMJBUCIqWisNLzCJMU6su2BfSCpexNf4AxGRqNhqZ5p5vbFMEUeOTjWWWk+p8qoLvZueGji218CDaviiKqbEwarSDiXX9jRjyWIxL8ux0FhZqgInT06w1o15mCIYcsVZ4uQOGrmv73gi01NZTJQvjBGbW18npl/nbwBj1wny3VaQ7T+IzLXKvQAAAA==[0m[Pipeline] // node
+[8mha:////4JgX4nJOmIwbACYqTamevQLHDkvbcp6dx8xVQpNin/zHAAAAoh+LCAAAAAAAAP9tjTESgjAQRT84FraWHiKMtI6VbYbGE0SIMZDZxWQRKk/k1byDjMxY+av/XvNeb6xTxJGjU62lzlOqverD4OanRo7dNfCoWr6omilxsKqyY8WNPS1YsVgsy3KsNDaW6sDJkxNsdWsepgiGXHGWOLuDRu6bO57I9FwWE+ULU8TuNjSJ6df5G8DU94K83Auy8gOu1dKAvQAAAA==[0m[Pipeline] End of Pipeline
+org.jenkinsci.plugins.workflow.actions.ErrorAction$ErrorId: 84747ae5-4b39-4db5-93ee-c736ef2d76bf
+Finished: ABORTED

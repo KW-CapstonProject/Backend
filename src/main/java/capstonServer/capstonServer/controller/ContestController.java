@@ -60,8 +60,6 @@ public class ContestController {
     @DeleteMapping("/{contestId}/delete")
     public ResponseEntity deleteStudyById(@ApiIgnore @AuthUser Users users,  @PathVariable Long contestId) {
         return contestService.deleteStudyById(users, contestId);
-
-
     }
 
 }

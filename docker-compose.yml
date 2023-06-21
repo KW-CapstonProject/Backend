@@ -24,3 +24,10 @@ services:
     container_name: redis-capstone-server
     ports:
       - 6379:6379
+  jenkins:
+    image: jenkins/jenkins:lts
+    user: root
+    volumes:
+      - ./jenkins:/var/jenkins_home
+    ports:
+      - 8080:8080
