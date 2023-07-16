@@ -1,7 +1,6 @@
 package capstonServer.capstonServer.dto.response;
 
 import capstonServer.capstonServer.entity.Comment;
-import capstonServer.capstonServer.entity.Users;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -13,13 +12,15 @@ import java.util.List;
 public class CommentResponse {
     private Long id;
     private String content;
-    private Users author;
+    private Long parentId;
+    private String author;
     private List<CommentResponse> children = new ArrayList<>();
 
-    public CommentResponse(Long id, String content, Users author) {
+    public CommentResponse(Long id, String content, String author) {
         this.id = id;
-        this.content = content;
         this.author = author;
+        this.content = content;
+
     }
 
     public static CommentResponse convertCommentToDto(Comment comment) {

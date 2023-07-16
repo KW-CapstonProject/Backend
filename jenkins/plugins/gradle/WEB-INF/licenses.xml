@@ -6,7 +6,7 @@
   <l:dependency version='1.7' artifactId='commons-validator' groupId='commons-validator' name='Apache Commons Validator' url='http://commons.apache.org/proper/commons-validator/'>
     <l:description>
     Apache Commons Validator provides the building blocks for both client side validation and server side data validation.
-    It may be used standalone or with a framework like Struts.
+    It may be used standalone or with a framework likes Struts.
   </l:description>
   </l:dependency>
   <l:dependency version='2.15.2' artifactId='jackson-annotations' groupId='com.fasterxml.jackson.core' name='Jackson-annotations' url='https://github.com/FasterXML/jackson'>

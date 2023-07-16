@@ -9,6 +9,7 @@ import capstonServer.capstonServer.service.KaKaoService;
 import capstonServer.capstonServer.service.UsersService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.Errors;
 import org.springframework.validation.annotation.Validated;
@@ -55,12 +56,18 @@ public class UsersController {
 
 
     @PostMapping("/emailConfirm")
-    public String emailConfirm(@RequestParam String email) throws Exception {
+    public ResponseEntity<String> emailConfirm(@RequestParam String email) throws Exception {
 
         String confirm = emailService.sendSimpleMessage(email);
 
-        return confirm;
+        return ResponseEntity.status(HttpStatus.OK).body(confirm);
     }
+
+//    @GetMapping("/codeConfirm")
+//    public String codeConfirm(@RequestParam("code") String code) throws Exception {
+//
+//
+//    }
 
     @PostMapping("/passConfirm")
     public String passConfirm(@RequestParam String email) throws Exception {

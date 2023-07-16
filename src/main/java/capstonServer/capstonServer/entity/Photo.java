@@ -1,18 +1,16 @@
 package capstonServer.capstonServer.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
 import java.util.UUID;
 
 @Entity
-@Builder
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
 public class Photo {
     @Id
     @GeneratedValue
@@ -30,6 +28,12 @@ public class Photo {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "contest_id")
+    @OnDelete(action = OnDeleteAction.CASCADE)
     private Contest contest;
+
+    public Photo(String fileUrl,Contest contest){
+        this.fileUrl=fileUrl;
+        this.contest=contest;
+    }
 
 }

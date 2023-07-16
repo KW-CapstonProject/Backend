@@ -1,153 +1,103 @@
 package capstonServer.capstonServer.service;
 
 
-import capstonServer.capstonServer.entity.Photo;
-import com.amazonaws.AmazonServiceException;
-import com.amazonaws.SdkClientException;
+import com.amazonaws.auth.AWSStaticCredentialsProvider;
+import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.services.s3.AmazonS3;
-import com.amazonaws.services.s3.model.*;
-import com.amazonaws.util.IOUtils;
+import com.amazonaws.services.s3.AmazonS3Client;
+import com.amazonaws.services.s3.AmazonS3ClientBuilder;
+import com.amazonaws.services.s3.model.CannedAccessControlList;
+import com.amazonaws.services.s3.model.DeleteObjectRequest;
+import com.amazonaws.services.s3.model.ObjectMetadata;
+import com.amazonaws.services.s3.model.PutObjectRequest;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.annotation.PostConstruct;
 import java.io.IOException;
-import java.net.URLEncoder;
+import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
 
 @Service
-@Slf4j
 @RequiredArgsConstructor
-public class S3Service {
+public class S3Service  {
+
+    private final AmazonS3 s3Client;
+
+    @Value("${cloud.aws.credentials.access-key}")
+    private String accessKey;
+
+    @Value("${cloud.aws.credentials.secret-key}")
+    private String secretKey;
 
     @Value("${cloud.aws.s3.bucket}")
-    private  String bucketName ;
+    private String bucket;
 
+    @Value("${cloud.aws.region.static}")
+    private String region;
 
-    private final AmazonS3 amazonS3Client;
-
-    //단일 파일 업로드 (프로필 사진)
-    public String uploadFile(MultipartFile multipartFile) throws IOException {
-        String fileName = UUID.randomUUID() + "-" + multipartFile.getOriginalFilename();
-
-        //파일 형식 구하기
-        String ext = fileName.split("\\.")[1];
-        String contentType = "";
-
-        //content type을 지정해서 올려주지 않으면 자동으로 "application/octet-stream"으로 고정이 되서 링크 클릭시 웹에서 열리는게 아니라 자동 다운이 시작됨.
-        switch (ext) {
-            case "jpeg":
-                contentType = "image/jpeg";
-                break;
-            case "png":
-                contentType = "image/png";
-                break;
-            case "txt":
-                contentType = "text/plain";
-                break;
-            case "pdf":
-                contentType = "image/pdf";
-                break;
-        }
-
-        try {
-            ObjectMetadata metadata = new ObjectMetadata();
-            metadata.setContentType(contentType);
-            amazonS3Client.putObject(new PutObjectRequest(bucketName, fileName, multipartFile.getInputStream(), metadata)
-                    .withCannedAcl(CannedAccessControlList.PublicRead));
-        } catch (AmazonServiceException e) {
-            e.printStackTrace();
-        } catch (SdkClientException e) {
-            e.printStackTrace();
-        }
-        return fileName;
-
+    @PostConstruct
+    public AmazonS3Client amazonS3Client() {
+        BasicAWSCredentials awsCreds = new BasicAWSCredentials(accessKey, secretKey);
+        return (AmazonS3Client) AmazonS3ClientBuilder.standard()
+                .withRegion(region)
+                .withCredentials(new AWSStaticCredentialsProvider(awsCreds))
+                .build();
     }
 
-    public String deleteFile(String name) {
-        String result = "success";
-        String filename = name.substring(name.lastIndexOf('/') + 1, name.length());
-        System.out.println(filename);
-        System.out.println(name);
+    public List<String> upload(List<MultipartFile> multipartFile) {
+        List<String> imgUrlList = new ArrayList<>();
 
+        // forEach 구문을 통해 multipartFile로 넘어온 파일들 하나씩 fileNameList에 추가
+        for (MultipartFile file : multipartFile) {
+            String fileName = createFileName(file.getOriginalFilename());
+            ObjectMetadata objectMetadata = new ObjectMetadata();
+            objectMetadata.setContentLength(file.getSize());
+            objectMetadata.setContentType(file.getContentType());
 
-        amazonS3Client.deleteObject(bucketName, name);
-        return result;
-    }
-
-    //단일 파일 삭제
-    public String deleteFiles(List<Photo> photoList) {
-        if(photoList!=null && !photoList.isEmpty()){
-            for (Photo photo:photoList){
-                amazonS3Client.deleteObject(bucketName, photo.getFileName());
+            try(InputStream inputStream = file.getInputStream()) {
+                s3Client.putObject(new PutObjectRequest(bucket+"/post/image", fileName, inputStream, objectMetadata)
+                        .withCannedAcl(CannedAccessControlList.PublicRead));
+                imgUrlList.add(s3Client.getUrl(bucket+"/post/image", fileName).toString());
+            } catch(IOException e) {
+                throw new IllegalArgumentException("IMAGE_UPLOAD_ERROR");
             }
-
         }
-        String result = "success";
-
-//        String name = fileName.substring(fileName.lastIndexOf('/') + 1, fileName.length());
-//        log.info(name);
-//
-//        try {
-//            boolean isObjectExist = amazonS3Client.doesObjectExist(bucket, name);
-//            System.out.println(isObjectExist);
-//
-//            if (isObjectExist) {
-//                amazonS3Client.deleteObject(bucket, name);
-//                log.info(name);
-//                log.info("단일 파일 삭제 성공");
-//            } else {
-//                result = "file not found";
-//            }
-//        } catch (Exception e) {
-//            log.debug("Delete File failed", e);
-//        }
-
-        return result;
+        return imgUrlList;
     }
 
-    //다중 파일 삭제
-//    public void deleteFiles(List<String> filename) {
-//       // DeleteObjectRequest deleteObjectRequest = new DeleteObjectRequest(bucket, filename);
-//        filename.forEach(files -> {
-//            // String result = "success";
-//            String keys = files.substring(files.lastIndexOf('/') + 1, files.length());
-//           // DeleteObjectRequest deleteObjectRequest = new DeleteObjectRequest(bucket,keys);
-//            System.out.println("삭제 여부 확인" + keys);
-//            boolean isObjectExist = amazonS3Client.doesObjectExist(bucket,keys);
-//            System.out.println(isObjectExist);
-//            if (isObjectExist) {
-//               amazonS3Client.deleteObject(new DeleteObjectRequest(bucket,keys));
-//                log.info("삭제 성공");
-//            } else {
-//                log.info("file not found");
-//            }
-//        });
-//    }
-
-
-    public ResponseEntity<byte[]> getObject(String storedFileName) throws IOException {
-        S3Object o = amazonS3Client.getObject(new GetObjectRequest(bucketName, storedFileName));
-        S3ObjectInputStream objectInputStream = ((S3Object) o).getObjectContent();
-        byte[] bytes = IOUtils.toByteArray(objectInputStream);
-
-        String fileName = URLEncoder.encode(storedFileName, "UTF-8").replaceAll("\\+", "%20");
-        HttpHeaders httpHeaders = new HttpHeaders();
-        httpHeaders.setContentType(MediaType.APPLICATION_OCTET_STREAM);
-        httpHeaders.setContentLength(bytes.length);
-        httpHeaders.setContentDispositionFormData("attachment", fileName);
-
-        return new ResponseEntity<>(bytes, httpHeaders, HttpStatus.OK);
-
+    // 이미지파일명 중복 방지
+    private String createFileName(String fileName) {
+        return UUID.randomUUID().toString().concat(getFileExtension(fileName));
     }
 
+    // 파일 유효성 검사
+    private String getFileExtension(String fileName) {
+        if (fileName.length() == 0) {
+            throw new IllegalArgumentException("IMAGE_UPLOAD_ERROR");
+        }
+        ArrayList<String> fileValidate = new ArrayList<>();
+        fileValidate.add(".jpg");
+        fileValidate.add(".jpeg");
+        fileValidate.add(".png");
+        fileValidate.add(".JPG");
+        fileValidate.add(".JPEG");
+        fileValidate.add(".PNG");
+        String idxFileName = fileName.substring(fileName.lastIndexOf("."));
+        if (!fileValidate.contains(idxFileName)) {
+            throw new IllegalArgumentException("IMAGE_UPLOAD_ERROR");
+        }
+        return fileName.substring(fileName.lastIndexOf("."));
+    }
 
+    // DeleteObject를 통해 S3 파일 삭제
+    public void deleteFile(String fileName){
+        DeleteObjectRequest deleteObjectRequest = new DeleteObjectRequest(bucket, fileName);
+        s3Client.deleteObject(deleteObjectRequest);
+    }
 }

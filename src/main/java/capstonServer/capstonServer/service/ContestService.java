@@ -19,12 +19,12 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
@@ -58,7 +58,7 @@ public class ContestService {
         try {
             List<ContestPageResponse> contestPageResponseList = contestRepository.findPageContest(pageable, title, contents);
 
-            return response.success(contestPageResponseList, "컨테스트 페이지 조회 성", HttpStatus.OK);
+            return response.success(contestPageResponseList, "컨테스트 페이지 조회 성공", HttpStatus.OK);
         }
             catch (Exception e) {
                 return response.fail("컨테스트 페이지 조회 실패",HttpStatus.BAD_REQUEST);
@@ -117,7 +117,7 @@ public class ContestService {
 
     //글 생성
     @Transactional
-    public ResponseEntity createContest(Users users, ContestRequest contestRequest,  MultipartFile[] files) throws IOException {
+    public ResponseEntity createContest(Users users, ContestRequest contestRequest,  List<String> files) throws IOException {
         try {
             Contest contest = Contest.builder()
                     .title(contestRequest.getTitle())
@@ -131,23 +131,15 @@ public class ContestService {
             Contest saveContest=contestRepository.save(contest);
             Users saveUsers = usersRepository.findById(users.getId()).get();
             saveUsers.getContestList().add(contest);
-            String filex = files[0].getOriginalFilename();
+            List<String> photoList=new ArrayList<>();
 
-            if (!filex.equals("")) {
-                for (MultipartFile file : files) {
-                    Photo photo = Photo.builder()
-                            .fileName(file.getOriginalFilename())
-                            .contest(contest)
-                            .fileUrl(s3Service.uploadFile(file))
-                            .fileSize(file.getSize())
-                            .build();
+            for (String file : files) {
+                    Photo photo =new Photo(file,contest);
                     photoRepository.save(photo);
                     saveContest.writePhoto(photo);
+                    photoList.add(photo.getFileUrl());
 
                 }
-
-            }
-            System.out.println(saveContest.getPhotoList());
 
             return response.success(new ContestResponse(contest), "컨테스트 글 등록 성공", HttpStatus.OK);
         } catch (Exception e) {
@@ -155,44 +147,23 @@ public class ContestService {
         }
     }
 
+    private void postBlankCheck(List<String> files){
+        if(files==null || files.isEmpty()){
+            throw new IllegalArgumentException("Wrong image path");
+        }
+    }
 
     //수정
     @Transactional
-    public ResponseEntity updateContest(Users users, Long contestId, ContestRequest contestRequest, MultipartFile[] files) throws IOException {
+    public ResponseEntity updateContest(Users users, Long contestId, ContestRequest contestRequest) throws IOException {
 
         try {
-            Contest contest = contestRepository.findById(contestId).orElseThrow(() -> new IllegalArgumentException(String.format("study is not Found!")));
+            Contest contest = contestRepository.findById(contestId).orElseThrow(() -> new IllegalArgumentException(String.format("contest is not Found!")));
             List<Photo> photo = photoRepository.findByContestId(contestId);
             if (checkContestLoginUser(users, contest)) {
                 contest.setTitle(contestRequest.getTitle());
                 contest.setAuthor(users.getName());
                 contest.setContents(contestRequest.getContents());
-//                List<JobCategory> jobCategoryList = new ArrayList<>();
-//                sub_category.forEach(id -> study.setJobCategoryList(Collections.singletonList(new JobCategory(id))));
-//                study.setJobCategoryList(jobCategoryList);
-            }
-
-//            return new ResponseEntity(new ApiRes("스터디 업데이트 완료", HttpStatus.OK, study), HttpStatus.OK);
-            photoRepository.deleteAll(photo);
-            for (Photo existingFile : photo) {
-                s3Service.deleteFile(existingFile.getFileUrl());
-            }
-            String filex = files[0].getOriginalFilename();
-
-            if (!filex.equals("")) {
-                // 파일 정보를 파일 테이블에 저장
-                for (MultipartFile file : files) {
-                    String fileNames = file.getOriginalFilename();
-                    String fileUrl = s3Service.uploadFile(file);
-                    long fileSize = file.getSize();
-                    Photo photo1 = Photo.builder().fileName(fileNames)
-                            .contest(contest)
-                            .fileUrl(fileUrl)
-                            .fileSize(fileSize)
-                            .build();
-                    photoRepository.save(photo1);
-                    contest.writePhoto(photo1);
-                }
             }
 
             usersRepository.save(users);

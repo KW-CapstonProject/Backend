@@ -1,6 +1,7 @@
 package capstonServer.capstonServer.entity;
 
 import lombok.*;
+import net.minidev.json.annotate.JsonIgnore;
 import org.hibernate.annotations.ColumnDefault;
 
 import javax.persistence.*;
@@ -10,8 +11,9 @@ import java.util.List;
 @Entity
 @Getter
 @Builder
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
+@Setter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Comment extends BaseTime{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,12 +24,14 @@ public class Comment extends BaseTime{
     private String content;
 
     @ColumnDefault("FALSE")
-    @Column(nullable = false)
     private Boolean isDeleted;
+
+    private String author;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="users_id")
-    private Users author;
+    @JsonIgnore
+    private Users users;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="contest_id")
@@ -35,35 +39,26 @@ public class Comment extends BaseTime{
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "parent_id")
+
     private Comment parent;
 
+
+    //children 댓글 추가에 대해
     @OneToMany(mappedBy = "parent", orphanRemoval = true)
+    @Builder.Default
     private List<Comment> children = new ArrayList<>();
 
 
     public Comment(String content) {
-        this.content = content;
+         this.content = content;
     }
 
-    public void updateAuthor(Users users) {
-        this.author = users;
-    }
 
-    public void updateContest(Contest contest) {
-        this.contest = contest;
-    }
-
-    public void updateParent(Comment comment) {
-        this.parent = comment;
-    }
 
     public void changeIsDeleted(Boolean isDeleted) {
         this.isDeleted = isDeleted;
     }
 
-    public void updateContent(String content) {
-        this.content = content;
-    }
 
 
 }

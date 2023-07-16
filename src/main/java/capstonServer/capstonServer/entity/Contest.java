@@ -52,7 +52,8 @@ public class Contest extends BaseTime {
     private int viewCount; //조회수
 
 
-    @OneToMany(mappedBy = "contest", cascade = CascadeType.ALL ,fetch = FetchType.LAZY,orphanRemoval = true )
+//    @OneToMany(mappedBy = "contest", cascade = CascadeType.ALL ,fetch = FetchType.LAZY,orphanRemoval = true )
+    @Transient
     private List<Photo> photoList =new ArrayList<>();
 
     @ManyToOne

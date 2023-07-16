@@ -29,7 +29,7 @@
        stage(&apos;Build&apos;) {
            steps {
               
-                   sh &quot;./gradlew clean&quot;
+                   sh &quot;./gradlew clean build&quot;
                
            }
        }

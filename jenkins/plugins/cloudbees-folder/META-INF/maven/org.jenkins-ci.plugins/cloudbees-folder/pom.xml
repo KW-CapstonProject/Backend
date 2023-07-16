@@ -7,7 +7,7 @@
   <version>6.815.v0dd5a_cb_40e0e</version>
   <packaging>hpi</packaging>
   <name>Folders Plugin</name>
-  <description>This plugin allows users to create "folders" to organize jobs. Users can define custom taxonomies (like
+  <description>This plugin allows users to create "folders" to organize jobs. Users can define custom taxonomies (likes
     by project type, organization type etc). Folders are nestable and you can define views within folders. Maintained by CloudBees, Inc.</description>
   <url>https://github.com/jenkinsci/cloudbees-folder-plugin/</url>
   <inceptionYear>2016</inceptionYear>

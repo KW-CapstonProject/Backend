@@ -2,6 +2,7 @@ package capstonServer.capstonServer.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.*;
+import net.minidev.json.annotate.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -46,6 +47,12 @@ public class Users extends BaseTime implements UserDetails {
     @JsonBackReference
     @Builder.Default
     private List<Contest> contestList =new ArrayList<>();
+
+    @OneToMany(mappedBy = "users", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JsonBackReference
+    @Builder.Default
+    @JsonIgnore
+    private List<Comment> commentList =new ArrayList<>();
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {

@@ -2,6 +2,7 @@ package capstonServer.capstonServer.service;
 
 import capstonServer.capstonServer.dto.request.CommentRequest;
 import capstonServer.capstonServer.dto.request.CommentRequestMapper;
+import capstonServer.capstonServer.dto.response.CommentResponse;
 import capstonServer.capstonServer.dto.response.Response;
 import capstonServer.capstonServer.entity.Comment;
 import capstonServer.capstonServer.entity.Contest;
@@ -39,16 +40,21 @@ public class CommentService {
 
         Comment parentComment;
         if (commentRequestDTO.getParentId() != null) {
+            System.out.println("실행");
             parentComment = commentRepository.findById(commentRequestDTO.getParentId())
                     .orElseThrow(() -> new NotFoundException("Could not found comment id : " + commentRequestDTO.getParentId()));
-            comment.updateParent(parentComment);
+            comment.setParent(parentComment);
         }
 
-        comment.updateAuthor(users);
-        comment.updateContest(contest);
+        comment.setAuthor(users.getName());
+        comment.setContest(contest);
+        comment.setContent(commentRequestDTO.getContent());
+        comment.setUsers(users);
 
         commentRepository.save(comment);
-        return response.success(comment, "댓글을 등록 하였습니다..", HttpStatus.CREATED);
+        users.getCommentList().add(comment);
+
+        return response.success(new CommentResponse(comment.getId(),comment.getAuthor(),comment.getContent()), "댓글을 등록 하였습니다..", HttpStatus.CREATED);
 
     }
 
@@ -79,7 +85,7 @@ public class CommentService {
         Comment comment = commentRepository.findById(commentId)
                 .orElseThrow(() -> new NotFoundException("Could not found comment id : " + commentId));
         //TODO 해당 메서드를 호출하는 사옹자와 댓글을 작성한 작성자가 같은지 확인하는 로직이 필요함
-        comment.updateContent(commentRequestDTO.getContent());
+        comment.setContent(commentRequestDTO.getContent());
 
         return response.success(comment, "댓글을 수정 하였습니다..", HttpStatus.OK);
     }
