@@ -54,6 +54,8 @@ public class ContestService {
             return localDateTime.toEpochSecond(ZoneOffset.UTC);
         }
     }
+
+
     public ResponseEntity getContestList(Pageable pageable, String title, String contents) {
         try {
             List<ContestPageResponse> contestPageResponseList = contestRepository.findPageContest(pageable, title, contents);
@@ -63,6 +65,17 @@ public class ContestService {
             catch (Exception e) {
                 return response.fail("컨테스트 페이지 조회 실패",HttpStatus.BAD_REQUEST);
             }
+
+    }
+    //컨테스트 response 하나더 만들기 
+    public ResponseEntity getTop5ContestsByLikes() {
+        List<Contest> contestImage=contestRepository.findTop5ContestsByLikes();
+        List<ContestResponse> contestResponses = new ArrayList<>();
+
+        for (Contest contest : contestImage) {
+            contestResponses.add(new ContestResponse(contest));
+        }
+        return response.success(contestResponses, "Top 게시글 확인", HttpStatus.OK);
 
     }
 

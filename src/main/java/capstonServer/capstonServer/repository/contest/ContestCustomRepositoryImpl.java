@@ -2,6 +2,7 @@ package capstonServer.capstonServer.repository.contest;
 
 import capstonServer.capstonServer.dto.response.ContestPageResponse;
 import capstonServer.capstonServer.entity.Contest;
+import capstonServer.capstonServer.entity.QContest;
 import com.querydsl.core.types.Projections;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.jpa.impl.JPAQueryFactory;
@@ -30,6 +31,16 @@ public class ContestCustomRepositoryImpl extends QuerydslRepositorySupport imple
                 .execute();
 
     }
+
+    @Override
+    public List<Contest> findTop5ContestsByLikes() {
+        QContest contest = QContest.contest;
+        return queryFactory.selectFrom(contest)
+                .orderBy(contest.likeCount.desc())
+                .limit(5)
+                .fetch();
+    }
+
 
     @Override
     public void subLikeCount(Contest contests) {

@@ -1,5 +1,6 @@
 package capstonServer.capstonServer.service;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.MailException;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -8,19 +9,27 @@ import org.springframework.stereotype.Service;
 import javax.mail.Message.RecipientType;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 
 @Service
+@Slf4j
 public class EmailServiceImpl implements EmailService{
 
     @Autowired
     JavaMailSender emailSender;
 
-    public static final String eCode = createKey();
+    public  String eCode;
+    // 코드 저장을 위한 temporary storage (e.g. HashMap or a database)
+    private Map<String, String> verificationCodes=new HashMap<>();
     public static final String ePw= getTempPassword();
 
 
     private MimeMessage createMessage(String to)throws Exception{
+        String eCode = createKey();
+        verificationCodes.put(to,eCode);
+        System.out.println(verificationCodes);
         System.out.println("보내는 대상 : "+ to);
         System.out.println("인증 번호 : "+ eCode);
         MimeMessage  message = emailSender.createMimeMessage();
@@ -76,6 +85,10 @@ public class EmailServiceImpl implements EmailService{
     }
 
 
+    public boolean verifyCode(String email, String code){
+        String savedCode=verificationCodes.get(email);
+        return code.equals(savedCode);
+    }
     public static String getTempPassword(){
         char[] charSet = new char[] { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F',
                 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
@@ -115,6 +128,7 @@ public class EmailServiceImpl implements EmailService{
         // TODO Auto-generated method stub
         MimeMessage message = createMessage(to);
         try{//예외처리
+
             emailSender.send(message);
         }catch(MailException es){
             es.printStackTrace();

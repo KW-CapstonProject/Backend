@@ -53,7 +53,9 @@ public class Contest extends BaseTime {
 
 
 //    @OneToMany(mappedBy = "contest", cascade = CascadeType.ALL ,fetch = FetchType.LAZY,orphanRemoval = true )
-    @Transient
+    @OneToMany(mappedBy = "contest")
+//    @Transient
+    @JsonIgnore
     private List<Photo> photoList =new ArrayList<>();
 
     @ManyToOne

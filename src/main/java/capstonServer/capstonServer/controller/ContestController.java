@@ -35,6 +35,11 @@ public class ContestController {
 
     }
 
+    @GetMapping("/best")
+    public ResponseEntity getBestImageList(){
+        return contestService.getTop5ContestsByLikes(); //조회수 뭔가 이상한 것 같기도 하고 ..?
+    }
+
 
 
     @PreAuthorize("hasAnyRole('USER')")

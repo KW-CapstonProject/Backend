@@ -13,12 +13,12 @@ import springfox.documentation.annotations.ApiIgnore;
 
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("/api/v1/heart")
+@RequestMapping("/api/v1")
 public class LikesController {
     private final LikeService likeService;
     @PreAuthorize("hasAnyRole('USER')")
     @Transactional
-    @PostMapping( "/{contestId}")
+    @PostMapping( "/heart/{contestId}")
     public ResponseEntity<?> insert(@ApiIgnore @AuthUser Users users, @PathVariable Long contestId) throws Exception {
         return likeService.insert(users, contestId);
 
@@ -26,9 +26,8 @@ public class LikesController {
 
     @PreAuthorize("hasAnyRole('USER')")
     @Transactional
-    @DeleteMapping("/{contestId}")
+    @DeleteMapping("/unheart/{contestId}")
     public ResponseEntity<?> delete(@ApiIgnore @AuthUser Users users, @PathVariable("contestId") Long contestId) throws Exception {
         return likeService.delete(users, contestId);
-
     }
 }

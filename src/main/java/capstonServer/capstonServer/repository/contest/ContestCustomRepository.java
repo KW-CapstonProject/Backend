@@ -11,4 +11,7 @@ public interface ContestCustomRepository {
     void updateLikeCount(Contest contest);
     void subLikeCount(Contest contest);
 
+    List<Contest> findTop5ContestsByLikes();
+
+
 }

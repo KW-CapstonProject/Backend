@@ -25,7 +25,6 @@ import java.util.List;
                     .build();
 
             String url = openAiService.createImage(createImageRequest).getData().get(0).getUrl();
-            System.out.println(url);
             s3Service.upload(url); //AWS S3 bucket 저장
             pictureUrls.add(url);
 

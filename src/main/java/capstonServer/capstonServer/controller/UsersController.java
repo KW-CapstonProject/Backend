@@ -58,16 +58,21 @@ public class UsersController {
     @PostMapping("/emailConfirm")
     public ResponseEntity<String> emailConfirm(@RequestParam String email) throws Exception {
 
-        String confirm = emailService.sendSimpleMessage(email);
-
-        return ResponseEntity.status(HttpStatus.OK).body(confirm);
+        String code= emailService.sendSimpleMessage(email);
+        return ResponseEntity.status(HttpStatus.OK).body("인증 번호 발급 성공");
     }
 
-//    @GetMapping("/codeConfirm")
-//    public String codeConfirm(@RequestParam("code") String code) throws Exception {
-//
-//
-//    }
+    @PostMapping("/verifyCode")
+    public ResponseEntity<String> codeConfirm(@RequestParam("email") String email,@RequestParam("code") String code) throws Exception {
+        boolean codeMatched = emailService.verifyCode(email, code);
+
+        if (codeMatched) {
+            return ResponseEntity.ok("인증번호 일치");
+        } else {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("인증번호 불일치");
+        }
+
+    }
 
     @PostMapping("/passConfirm")
     public String passConfirm(@RequestParam String email) throws Exception {

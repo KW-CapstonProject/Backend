@@ -7,6 +7,9 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/image")
 @RequiredArgsConstructor
@@ -22,10 +25,12 @@ public class Text2ImageController {
         return testWord;
     }
     @PostMapping("/generate")
-    public ResponseEntity<?> generateImage(@RequestBody String prompt) {
+    public List<String> generateImage(@RequestParam  String prompt) {
         String word= papagoService.test(prompt);
+        List<String> pictureUrlList = aiService.generatePicture(word);
 
-        return new ResponseEntity<>(aiService.generatePicture(word), HttpStatus.OK);
+        return pictureUrlList;
+
     }
 
     @GetMapping("/get-history")
