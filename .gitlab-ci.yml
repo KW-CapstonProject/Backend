@@ -16,66 +16,69 @@
 # This specific template is located at:
 # https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Getting-Started.gitlab-ci.yml
 
-stages:          # List of stages for jobs, and their order of execution
-  - build
-  - deploy
-
-cache:
-  paths:
-    - .gradle/wrapper
-    - .gradle/caches
-
-build:
-  stage: build
-  only:
-    - main
-  before_script:
-    - echo 'build starts'
-    - chmod +x ./gradlew
-  script:
-    - ./gradlew clean build
-  artifacts:
-    paths:
-      - build/libs/*.jar
-    expire_in: 1 week 
-  tags:
-    - pocket-runner
-  when: manual 
-
-dev_deploy:
-    stage: deploy
-    only:
-        - master
-    before_script:
-        - (before script 내용)
-    script:
-        - (script 내용)
-    tags:
-        - pocket-runner
-    when: manual
-
-stage_deploy:
-  stage: deploy
-  only:
-    - master
-  before_script:
-    - (before script 내용)
-  script:
-    - (script 내용)
-  tags:
-    - pocket-runner
-  when: manual
-  
-prod_deploy:
-  stage: deploy
-  only:
-    - master
-  before_script:
-    - (before script 내용)
-  script:
-    - (script 내용)
-  tags:
-    - pocket-runner
-  when: manual
 
 
+
+#stages:          # List of stages for jobs, and their order of execution
+#  - build
+#  - deploy
+#
+#cache:
+#  paths:
+#    - .gradle/wrapper
+#    - .gradle/caches
+#
+#build:
+#  stage: build
+#  only:
+#    - main
+#  before_script:
+#    - echo 'build starts'
+#    - chmod +x ./gradlew
+#  script:
+#    - ./gradlew clean build
+#  artifacts:
+#    paths:
+#      - build/libs/*.jar
+#    expire_in: 1 week
+#  tags:
+#    - pocket-runner
+#  when: manual
+#
+#dev_deploy:
+#    stage: deploy
+#    only:
+#        - master
+#    before_script:
+#        - (before script 내용)
+#    script:
+#        - (script 내용)
+#    tags:
+#        - pocket-runner
+#    when: manual
+#
+#stage_deploy:
+#  stage: deploy
+#  only:
+#    - master
+#  before_script:
+#    - (before script 내용)
+#  script:
+#    - (script 내용)
+#  tags:
+#    - pocket-runner
+#  when: manual
+#
+#prod_deploy:
+#  stage: deploy
+#  only:
+#    - master
+#  before_script:
+#    - (before script 내용)
+#  script:
+#    - (script 내용)
+#  tags:
+#    - pocket-runner
+#  when: manual
+#
+#

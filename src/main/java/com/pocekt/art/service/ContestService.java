@@ -1,15 +1,16 @@
 package com.pocekt.art.service;
 
-import capstonServer.capstonServer.dto.request.ContestRequest;
-import capstonServer.capstonServer.dto.response.ContestPageResponse;
-import capstonServer.capstonServer.dto.response.ContestResponse;
-import capstonServer.capstonServer.dto.response.Response;
-import capstonServer.capstonServer.entity.Contest;
-import capstonServer.capstonServer.entity.Photo;
-import capstonServer.capstonServer.entity.Users;
-import capstonServer.capstonServer.repository.PhotoRepository;
-import capstonServer.capstonServer.repository.UsersRepository;
-import capstonServer.capstonServer.repository.contest.ContestRepository;
+
+import com.pocekt.art.dto.request.ContestRequest;
+import com.pocekt.art.dto.response.ContestPageResponse;
+import com.pocekt.art.dto.response.ContestResponse;
+import com.pocekt.art.dto.response.Response;
+import com.pocekt.art.entity.Contest;
+import com.pocekt.art.entity.Photo;
+import com.pocekt.art.entity.Users;
+import com.pocekt.art.repository.PhotoRepository;
+import com.pocekt.art.repository.UsersRepository;
+import com.pocekt.art.repository.contest.ContestRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Pageable;
